@@ -1,0 +1,74 @@
+{
+    IBClasses = (
+        {CLASS = FacileCell; LANGUAGE = ObjC; SUPERCLASS = NSTextFieldCell; }, 
+        {
+            ACTIONS = {
+                clearStatus = id; 
+                donate = id; 
+                gotoprofile = id; 
+                loginout = id; 
+                quitFacile = id; 
+                refresh = id; 
+                sendStatus = id; 
+                toggleWindow = id; 
+            }; 
+            CLASS = FacileController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                data = NSArrayController; 
+                loginoutMenuItem = NSMenuItem; 
+                mainWindow = NSPanel; 
+                prefsWindow = NSPanel; 
+                progress = NSProgressIndicator; 
+                statusField = NSTextField; 
+                table = NSTableView; 
+                toolbarDelegate = FacileToolbarDelegate; 
+                topMenuItem = NSMenuItem; 
+                updater = SUUpdater; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = FacileToolbarDelegate; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {data = NSArrayController; menu = NSMenu; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FacileWindow; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }, 
+        {
+            ACTIONS = {saveAction = id; }; 
+            CLASS = "Facile_AppDelegate"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = HMBlkBox; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = HMBlkButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = HMBlkButtonCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {CLASS = HMBlkContentView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = HMBlkOutlineView; LANGUAGE = ObjC; SUPERCLASS = NSOutlineView; }, 
+        {CLASS = HMBlkPanel; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }, 
+        {
+            CLASS = HMBlkProgressIndicator; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSProgressIndicator; 
+        }, 
+        {CLASS = HMBlkScrollView; LANGUAGE = ObjC; SUPERCLASS = NSScrollView; }, 
+        {CLASS = HMBlkScroller; LANGUAGE = ObjC; SUPERCLASS = NSScroller; }, 
+        {
+            CLASS = HMBlkTableHeaderCell; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSTableHeaderCell; 
+        }, 
+        {CLASS = HMBlkTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

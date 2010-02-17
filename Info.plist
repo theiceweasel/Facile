@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>Facile.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.elidourado.facile</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.6</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.0.6</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>LSUIElement</key>
+	<string>1</string>
+	<key>SUFeedURL</key>
+	<string>http://osx.iusethis.com/appcast/facile</string>
+	<key>SUScheduledCheckInterval</key>
+	<integer>3600</integer>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="256px" height="256px" id="RSSicon" viewBox="0 0 256 256">
+<defs>
+<linearGradient x1="0" y1="0" x2="0" y2="1" id="mainblue">
+<stop  offset="0.0" stop-color="#3D5992"/>
+<stop  offset="1.0" stop-color="#131D33"/>
+</linearGradient>
+<linearGradient x1="0" y1="0" x2="0" y2="1" id="lightblue">
+<stop  offset="0.0" stop-color="#6C83B3"/>
+<stop  offset="1.0" stop-color="#3B5998"/>
+</linearGradient>
+</defs>
+<rect width="256" height="256" rx="32" ry="32" x="0"  y="0"  fill="url(#mainblue)"/>
+<rect width="256" height="48" rx="0" ry="0" x="0"  y="176"  fill="url(#lightblue)"/>
+<path d="M135 111 L115 111 L115 146 L135 146 L135 226 L175 226 L175 146 L205 146 L210 111 C202.732 111 180.868 114.661 175.603 109.397 C169.929 103.722 174.644 84.6632 181.015 81.3032 C188.074 77.5809 197.727 80.1184 205 82 L210 51 C186.734 49.1639 149.302 41.4316 138.119 70 C133.189 82.5933 135 97.7708 135 111z" fill="#FFF"/>
+</svg>
