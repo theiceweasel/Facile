@@ -3,7 +3,7 @@
 //  Facile
 //
 //  Created by Eli Dourado on 11/16/07.
-//  Copyright Eli Dourado 2007 . All rights reserved.
+//  //  // Edited By William Whitlock                                                   Eli Dourado 2007 . All rights reserved.
 //
 
 #import "Facile_AppDelegate.h"
@@ -194,4 +194,5 @@
 }
 
 
+@synthesize window;
 @end

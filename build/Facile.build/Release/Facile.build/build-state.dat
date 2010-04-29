@@ -1,0 +1,991 @@
+TFacile
+v7
+r0
+t294221034.116460
+cCheck dependencies
+cProcessInfoPlistFile /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Info.plist Info.plist
+cCopyStringsFile /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCpResource "build/Release/Facile.app/Contents/Resources/Growl Registration Ticket.growlRegDict" "Growl Registration Ticket.growlRegDict"
+cCpResource build/Release/Facile.app/Contents/Resources/mask.png mask.png
+cCpResource build/Release/Facile.app/Contents/Resources/alert.png alert.png
+cCpResource build/Release/Facile.app/Contents/Resources/Facile.icns Facile.icns
+cCpResource build/Release/Facile.app/Contents/Resources/menubar.png menubar.png
+cCpResource build/Release/Facile.app/Contents/Resources/default.png default.png
+cCompileXIB /Users/William/Documents/GitHome/English.lproj/MainMenu.xib
+cCpResource build/Release/Facile.app/Contents/Resources/Changelog Changelog
+cProcessPCH /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch.gch Facile_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch.gch Facile_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cDataModelCompile /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Facile_DataModel.mom /Users/William/Documents/GitHome/Facile_DataModel.xcdatamodel
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/main.o /Users/William/Documents/GitHome/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile_AppDelegate.o /Users/William/Documents/GitHome/Facile_AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileController.o /Users/William/Documents/GitHome/FacileController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCell.o /Users/William/Documents/GitHome/FacileCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCellDelegate.o /Users/William/Documents/GitHome/FacileCellDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileToolbarDelegate.o /Users/William/Documents/GitHome/FacileToolbarDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/main.o /Users/William/Documents/GitHome/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile_AppDelegate.o /Users/William/Documents/GitHome/Facile_AppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileController.o /Users/William/Documents/GitHome/FacileController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile normal i386
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCell.o /Users/William/Documents/GitHome/FacileCell.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCellDelegate.o /Users/William/Documents/GitHome/FacileCellDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileToolbarDelegate.o /Users/William/Documents/GitHome/FacileToolbarDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile normal ppc
+cCreateUniversalBinary /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/MacOS/Facile normal "i386 ppc"
+cPBXCp build/Release/Facile.app/Contents/Frameworks/BWToolkitFramework.framework BWToolkitFramework.framework
+cPBXCp build/Release/Facile.app/Contents/Frameworks/MKAbeFook.framework MKAbeFook.framework
+cPBXCp build/Release/Facile.app/Contents/Frameworks/Sparkle.framework Sparkle.framework
+cPBXCp build/Release/Facile.app/Contents/Frameworks/Growl.framework Growl.framework
+cPBXCp build/Release/Facile.app/Contents/Frameworks/FacileController.h FacileController.h
+cPBXCp build/Release/Facile.app/Contents/Frameworks/FacileCell.h FacileCell.h
+cPBXCp build/Release/Facile.app/Contents/Frameworks/FacileCellDelegate.h FacileCellDelegate.h
+cPBXCp build/Release/Facile.app/Contents/Frameworks/FacileToolbarDelegate.h FacileToolbarDelegate.h
+cTouch /Users/William/Documents/GitHome/build/Release/Facile.app
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004AB44D2500000000000000EE
+t1253330213
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework/Headers/AppKit.h
+c000000004864BB88000000000000170F
+t1214561160
+s5903
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004864BE3E00000000000005D7
+t1214561854
+s1495
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004864A1C900000000000012EE
+t1214554569
+s4846
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.h
+c000000004864C63A0000000000000957
+t1214563898
+s2391
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/sys/cdefs.h
+c0000000047E883CF0000000000004990
+t1206420431
+s18832
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/William/BWToolkit/BWToolkitFramework.framework
+c000000004BD6030300000000000000CC
+t1272316675
+s204
+
+N/Users/William/BWToolkit/BWToolkitFramework.framework/BWToolkitFramework
+c000000004B596EAB00000000000E843C
+t1264152235
+s951356
+
+N/Users/William/Documents/GitHome/BWToolkitFramework.framework
+c000000004BD6030300000000000000CC
+t1272316675
+s204
+
+N/Users/William/Documents/GitHome/BWToolkitFramework.framework/BWToolkitFramework
+c000000004B596EAB00000000000E843C
+t1264152235
+s951356
+
+N/Users/William/Documents/GitHome/Changelog
+c000000004BD6B11100000000000000A1
+t1272361233
+s161
+
+N/Users/William/Documents/GitHome/English.lproj/InfoPlist.strings
+c000000004B7C072C00000000000000CA
+t1266419500
+s202
+
+N/Users/William/Documents/GitHome/English.lproj/MainMenu.xib
+c000000004BD923CB0000000000035B29
+t1272521675
+s219945
+
+N/Users/William/Documents/GitHome/Facile.icns
+c000000004B7C072C0000000000005F33
+t1266419500
+s24371
+
+N/Users/William/Documents/GitHome/FacileCell.h
+c000000004BD6B28300000000000005FC
+t1272361603
+s1532
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/FacileCell.m
+c000000004BD6A7EF00000000000013D9
+t1272358895
+s5081
+i"FacileCell.h"
+
+N/Users/William/Documents/GitHome/FacileCellDelegate.h
+c000000004BD64FF90000000000000127
+t1272336377
+s295
+i<Cocoa/Cocoa.h>
+i"FacileCell.h"
+
+N/Users/William/Documents/GitHome/FacileCellDelegate.m
+c000000004BD64FFB00000000000005B5
+t1272336379
+s1461
+i"FacileCellDelegate.h"
+
+N/Users/William/Documents/GitHome/FacileController.h
+c000000004BD90BCB00000000000009CE
+t1272515531
+s2510
+i<Sparkle/Sparkle.h>
+i<Cocoa/Cocoa.h>
+i<MKAbeFook/MKAbeFook.h>
+i<Growl/Growl.h>
+i<WebKit/WebKit.h>
+i"FacileCell.h"
+i"FacileCellDelegate.h"
+i"FacileToolbarDelegate.h"
+
+N/Users/William/Documents/GitHome/FacileController.m
+c000000004BD9187A00000000000033D6
+t1272518778
+s13270
+i"FacileController.h"
+
+N/Users/William/Documents/GitHome/FacileToolbarDelegate.h
+c000000004BD6A24C000000000000024F
+t1272357452
+s591
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/FacileToolbarDelegate.m
+c000000004BD6A224000000000000055A
+t1272357412
+s1370
+i"FacileToolbarDelegate.h"
+
+N/Users/William/Documents/GitHome/Facile_AppDelegate.h
+c000000004BD6B28700000000000002C9
+t1272361607
+s713
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Facile_AppDelegate.m
+c000000004BD6B2860000000000001998
+t1272361606
+s6552
+i"Facile_AppDelegate.h"
+
+N/Users/William/Documents/GitHome/Facile_DataModel.xcdatamodel
+c000000004BD7982A0000000000000088
+t1272420394
+s136
+
+N/Users/William/Documents/GitHome/Facile_Prefix.pch
+c000000004B7C072C000000000000008F
+t1266419500
+s143
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Growl Registration Ticket.growlRegDict
+c000000004B7C072C0000000000000191
+t1266419500
+s401
+
+N/Users/William/Documents/GitHome/Growl.framework
+c000000004BD64F1800000000000000CC
+t1272336152
+s204
+
+N/Users/William/Documents/GitHome/Growl.framework/Growl
+c000000004B7C072C000000000003F4B8
+t1266419500
+s259256
+
+N/Users/William/Documents/GitHome/Growl.framework/Headers/Growl.h
+c000000004B7C072C0000000000000082
+t1266419500
+s130
+i"GrowlDefines.h"
+i"GrowlApplicationBridge.h"
+i"GrowlApplicationBridge-Carbon.h"
+
+N/Users/William/Documents/GitHome/Growl.framework/Headers/GrowlApplicationBridge-Carbon.h
+c000000004B7C072C000000000000867E
+t1266419500
+s34430
+i<sys/cdefs.h>
+i<Carbon/Carbon.h>
+
+N/Users/William/Documents/GitHome/Growl.framework/Headers/GrowlApplicationBridge.h
+c000000004B7C072C0000000000006B1D
+t1266419500
+s27421
+i<Foundation/Foundation.h>
+i<AppKit/AppKit.h>
+i"GrowlDefines.h"
+
+N/Users/William/Documents/GitHome/Growl.framework/Headers/GrowlDefines.h
+c000000004B7C072C0000000000003D75
+t1266419500
+s15733
+
+N/Users/William/Documents/GitHome/MKAbeFook.framework
+c000000004BD6972900000000000000EE
+t1272354601
+s238
+
+N/Users/William/Documents/GitHome/MKAbeFook.framework/Headers/MKAbeFook.h
+c000000004B7C072C00000000000000EB
+t1266419500
+s235
+i"MKFacebook.h"
+i"MKASyncRequest.h"
+i"MKParsingExtras.h"
+i"MKPhotoUploader.h"
+
+N/Users/William/Documents/GitHome/MKAbeFook.framework/Headers/MKAsyncRequest.h
+c000000004B7C072C000000000000094A
+t1266419500
+s2378
+i<Cocoa/Cocoa.h>
+i"MKFacebook.h"
+
+N/Users/William/Documents/GitHome/MKAbeFook.framework/Headers/MKFacebook.h
+c000000004B7C072C0000000000000C86
+t1266419500
+s3206
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/MKAbeFook.framework/Headers/MKParsingExtras.h
+c000000004B7C072C0000000000000E7E
+t1266419500
+s3710
+i"MKAbeFook.h"
+
+N/Users/William/Documents/GitHome/MKAbeFook.framework/Headers/MKPhotoUploader.h
+c000000004B7C072C0000000000000A0A
+t1266419500
+s2570
+i<Cocoa/Cocoa.h>
+i"MKFacebook.h"
+
+N/Users/William/Documents/GitHome/MKAbeFook.framework/MKAbeFook
+c000000004B7C072C0000000000018C80
+t1266419500
+s101504
+
+N/Users/William/Documents/GitHome/Sparkle.framework
+c000000004BD64F1800000000000000CC
+t1272336152
+s204
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/NSApplication+AppCopies.h
+c000000004B7C072C00000000000000F1
+t1266419500
+s241
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/NSFileManager+Authentication.h
+c000000004B7C072C000000000000011F
+t1266419500
+s287
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/NSFileManager+Verification.h
+c000000004B7C072C000000000000019C
+t1266419500
+s412
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUAppcast.h
+c000000004B7C072C00000000000001DF
+t1266419500
+s479
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUAppcastItem.h
+c000000004B7C072C0000000000000484
+t1266419500
+s1156
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUAutomaticUpdateAlert.h
+c000000004B7C072C0000000000000192
+t1266419500
+s402
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUConstants.h
+c000000004B7C072C000000000000024B
+t1266419500
+s587
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUStatusChecker.h
+c000000004B7C072C000000000000031A
+t1266419500
+s794
+i<Cocoa/Cocoa.h>
+i<Sparkle/SUUpdater.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUStatusController.h
+c000000004B7C072C00000000000003E4
+t1266419500
+s996
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUUnarchiver.h
+c000000004B7C072C0000000000000211
+t1266419500
+s529
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUUpdateAlert.h
+c000000004B7C072C0000000000000378
+t1266419500
+s888
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUUpdater.h
+c000000004B7C072C0000000000000878
+t1266419500
+s2168
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/SUUtilities.h
+c000000004B7C072C0000000000000238
+t1266419500
+s568
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Headers/Sparkle.h
+c000000004B7C072C0000000000000201
+t1266419500
+s513
+i"SUUpdater.h"
+i"SUUtilities.h"
+i"SUConstants.h"
+i"SUAppcast.h"
+i"SUAppcastItem.h"
+i"SUUpdateAlert.h"
+i"SUAutomaticUpdateAlert.h"
+i"SUStatusController.h"
+i"SUUnarchiver.h"
+i"SUStatusChecker.h"
+i"NSApplication+AppCopies.h"
+i"NSFileManager+Authentication.h"
+i"NSFileManager+Verification.h"
+
+N/Users/William/Documents/GitHome/Sparkle.framework/Sparkle
+c000000004B7C072C0000000000030300
+t1266419500
+s197376
+
+N/Users/William/Documents/GitHome/alert.png
+c000000004B7C072C0000000000001065
+t1266419500
+s4197
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile
+t1272528232
+s45812
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile.LinkFileList
+c000000004BD93D5C0000000000000297
+t1272528220
+s663
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCell.o
+t1272528230
+s9268
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCellDelegate.o
+t1272528230
+s5132
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileController.o
+t1272528231
+s33868
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileToolbarDelegate.o
+t1272528230
+s7116
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile_AppDelegate.o
+t1272528229
+s8104
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/main.o
+t1272528229
+s1832
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile
+t1272528233
+s44976
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile.LinkFileList
+c000000004BD93D5C0000000000000291
+t1272528220
+s657
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCell.o
+t1272528232
+s10364
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCellDelegate.o
+t1272528232
+s5724
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileController.o
+t1272528232
+s39484
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileToolbarDelegate.o
+t1272528232
+s7424
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile_AppDelegate.o
+t1272528230
+s9184
+
+N/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/main.o
+t1272528230
+s1892
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app
+t1272528234
+s102
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/BWToolkitFramework.framework
+t1272528233
+s204
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/FacileCell.h
+t1272528233
+s1532
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/FacileCellDelegate.h
+t1272528233
+s295
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/FacileController.h
+t1272528233
+s2510
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/FacileToolbarDelegate.h
+t1272528233
+s591
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/Growl.framework
+t1272528233
+s204
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/MKAbeFook.framework
+t1272528233
+s238
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks/Sparkle.framework
+t1272528233
+s204
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Info.plist
+t1272528220
+s1064
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/MacOS/Facile
+t1272528233
+s98224
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/PkgInfo
+t1272528220
+s8
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Changelog
+t1272528220
+s161
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1272528220
+s202
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/English.lproj/MainMenu.nib
+t1272528222
+s60893
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Facile.icns
+t1272528220
+s24371
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Facile_DataModel.mom
+t1272528229
+s1556
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Growl Registration Ticket.growlRegDict
+t1272528220
+s401
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/alert.png
+t1272528220
+s4197
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/default.png
+t1272528220
+s5163
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/mask.png
+t1272528220
+s287
+
+N/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/menubar.png
+t1272528220
+s4067
+
+N/Users/William/Documents/GitHome/default.png
+c000000004B7C072C000000000000142B
+t1266419500
+s5163
+
+N/Users/William/Documents/GitHome/main.m
+c000000004B7C072C00000000000000FC
+t1266419500
+s252
+i<Cocoa/Cocoa.h>
+
+N/Users/William/Documents/GitHome/mask.png
+c000000004B7C072C000000000000011F
+t1266419500
+s287
+
+N/Users/William/Documents/GitHome/menubar.png
+c000000004B7C072C0000000000000FE3
+t1266419500
+s4067
+
+N/var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch.gch
+t1272528229
+s25035352
+
+N/var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch.gch
+t1272528228
+s26366720
+
+NInfo.plist
+c000000004BD90A0C000000000000043D
+t1272515084
+s1085
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies294221020#294221020#0(0"0(0#1#0"2454603888#0"0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCell.o /Users/William/Documents/GitHome/FacileCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s294221029.768444
+e294221030.087546
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCell.o
+x/Users/William/Documents/GitHome/FacileCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/William/Documents/GitHome/FacileCell.m: In function '-[FacileCell setObjectValue:]':
+o/Users/William/Documents/GitHome/FacileCell.m:32: warning: '-retain' not found in protocol(s)
+lSLF07#2@53"Compile /Users/William/Documents/GitHome/FacileCell.m294221029#294221030#0(186"/Users/William/Documents/GitHome/FacileCell.m: In function '-[FacileCell setObjectValue:]':/Users/William/Documents/GitHome/FacileCell.m:32: warning: '-retain' not found in protocol(s)1(22@34"'-retain' not found in protocol(s)294221029#92#94#0(6@45"/Users/William/Documents/GitHome/FacileCell.m294051695#32#0#32#0#28"'*' not found in protocol(s)0(0#0#45"/Users/William/Documents/GitHome/FacileCell.m2454603888#1233"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/i386 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileCell.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCell.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCellDelegate.o /Users/William/Documents/GitHome/FacileCellDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s294221030.087674
+e294221030.256006
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCellDelegate.o
+x/Users/William/Documents/GitHome/FacileCellDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/William/Documents/GitHome/FacileCellDelegate.m294221030#294221030#0(0"0(0#0#53"/Users/William/Documents/GitHome/FacileCellDelegate.m2454603888#1249"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/i386 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileCellDelegate.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileCellDelegate.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileController.o /Users/William/Documents/GitHome/FacileController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s294221029.512400
+e294221031.875027
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/i386/FacileController.o
+x/Users/William/Documents/GitHome/FacileController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/William/Documents/GitHome/FacileController.m294221029#294221031#0(0"0(0#0#51"/Users/William/Documents/GitHome/FacileController.m2454603888#1245"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/i386 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileController.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileController.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileToolbarDelegate.o /Users/William/Documents/GitHome/FacileToolbarDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s294221030.256138
+e294221030.450872
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/i386/FacileToolbarDelegate.o
+x/Users/William/Documents/GitHome/FacileToolbarDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/William/Documents/GitHome/FacileToolbarDelegate.m294221030#294221030#0(0"0(0#0#56"/Users/William/Documents/GitHome/FacileToolbarDelegate.m2454603888#1255"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/i386 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileToolbarDelegate.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/FacileToolbarDelegate.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile_AppDelegate.o /Users/William/Documents/GitHome/Facile_AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s294221029.498953
+e294221029.768311
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/i386/Facile_AppDelegate.o
+x/Users/William/Documents/GitHome/Facile_AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/William/Documents/GitHome/Facile_AppDelegate.m294221029#294221029#0(0"0(0#0#53"/Users/William/Documents/GitHome/Facile_AppDelegate.m2454603888#1249"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/i386 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch -c /Users/William/Documents/GitHome/Facile_AppDelegate.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile_AppDelegate.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/i386/main.o /Users/William/Documents/GitHome/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s294221029.249620
+e294221029.512264
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/i386/main.o
+x/Users/William/Documents/GitHome/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/William/Documents/GitHome/main.m294221029#294221029#0(0"0(0#0#39"/Users/William/Documents/GitHome/main.m2454603888#1221"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/i386 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch -c /Users/William/Documents/GitHome/main.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/main.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCell.o /Users/William/Documents/GitHome/FacileCell.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s294221032.228426
+e294221032.535985
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCell.o
+x/Users/William/Documents/GitHome/FacileCell.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/William/Documents/GitHome/FacileCell.m: In function '-[FacileCell setObjectValue:]':
+o/Users/William/Documents/GitHome/FacileCell.m:32: warning: '-retain' not found in protocol(s)
+lSLF07#2@53"Compile /Users/William/Documents/GitHome/FacileCell.m294221032#294221032#0(186"/Users/William/Documents/GitHome/FacileCell.m: In function '-[FacileCell setObjectValue:]':/Users/William/Documents/GitHome/FacileCell.m:32: warning: '-retain' not found in protocol(s)1(22@34"'-retain' not found in protocol(s)294221032#92#94#0(6@45"/Users/William/Documents/GitHome/FacileCell.m294051695#32#0#32#0#28"'*' not found in protocol(s)0(0#0#45"/Users/William/Documents/GitHome/FacileCell.m2454603888#1227"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/ppc -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileCell.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCell.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCellDelegate.o /Users/William/Documents/GitHome/FacileCellDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s294221032.536110
+e294221032.739742
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCellDelegate.o
+x/Users/William/Documents/GitHome/FacileCellDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/William/Documents/GitHome/FacileCellDelegate.m294221032#294221032#0(0"0(0#0#53"/Users/William/Documents/GitHome/FacileCellDelegate.m2454603888#1243"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/ppc -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileCellDelegate.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileCellDelegate.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileController.o /Users/William/Documents/GitHome/FacileController.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s294221030.843407
+e294221032.228209
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileController.o
+x/Users/William/Documents/GitHome/FacileController.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/William/Documents/GitHome/FacileController.m294221030#294221032#0(0"0(0#0#51"/Users/William/Documents/GitHome/FacileController.m2454603888#1239"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/ppc -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileController.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileController.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileToolbarDelegate.o /Users/William/Documents/GitHome/FacileToolbarDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s294221032.739874
+e294221032.967307
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileToolbarDelegate.o
+x/Users/William/Documents/GitHome/FacileToolbarDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/William/Documents/GitHome/FacileToolbarDelegate.m294221032#294221032#0(0"0(0#0#56"/Users/William/Documents/GitHome/FacileToolbarDelegate.m2454603888#1249"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/ppc -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch -c /Users/William/Documents/GitHome/FacileToolbarDelegate.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/FacileToolbarDelegate.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile_AppDelegate.o /Users/William/Documents/GitHome/Facile_AppDelegate.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s294221030.608372
+e294221030.843282
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile_AppDelegate.o
+x/Users/William/Documents/GitHome/Facile_AppDelegate.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/William/Documents/GitHome/Facile_AppDelegate.m294221030#294221030#0(0"0(0#0#53"/Users/William/Documents/GitHome/Facile_AppDelegate.m2454603888#1243"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/ppc -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch -c /Users/William/Documents/GitHome/Facile_AppDelegate.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile_AppDelegate.o0#
+
+CCompileC build/Facile.build/Release/Facile.build/Objects-normal/ppc/main.o /Users/William/Documents/GitHome/main.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s294221030.451003
+e294221030.608084
+r1
+xCompileC
+xbuild/Facile.build/Release/Facile.build/Objects-normal/ppc/main.o
+x/Users/William/Documents/GitHome/main.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/William/Documents/GitHome/main.m294221030#294221030#0(0"0(0#0#39"/Users/William/Documents/GitHome/main.m2454603888#1215"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/ppc -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -include /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch -c /Users/William/Documents/GitHome/main.m -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/main.o0#
+
+CCompileXIB /Users/William/Documents/GitHome/English.lproj/MainMenu.xib
+s294221020.372398
+e294221022.928750
+r1
+xCompileXIB
+x/Users/William/Documents/GitHome/English.lproj/MainMenu.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/William/Documents/GitHome/English.lproj/MainMenu.xib:633: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib294221020#294221022#0(282"/* com.apple.ibtool.document.warnings *//Users/William/Documents/GitHome/English.lproj/MainMenu.xib:633: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.1(22@166"This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.294221022#4294967295#0#0(6@59"/Users/William/Documents/GitHome/English.lproj/MainMenu.xib294214475#633#0#633#0#0"0(0#0#59"/Users/William/Documents/GitHome/English.lproj/MainMenu.xib2454603888#310"    cd /Users/William/Documents/GitHome    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/English.lproj/MainMenu.nib /Users/William/Documents/GitHome/English.lproj/MainMenu.xib0#
+
+CCopyStringsFile /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s294221020.341494
+e294221020.890889
+r1
+xCopyStringsFile
+x/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings294221020#294221020#0(0"0(0#0#64"/Users/William/Documents/GitHome/English.lproj/InfoPlist.strings2454603888#355"    cd /Users/William/Documents/GitHome    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/English.lproj0#
+
+CCpResource "build/Release/Facile.app/Contents/Resources/Growl Registration Ticket.growlRegDict" "Growl Registration Ticket.growlRegDict"
+s294221020.359841
+e294221020.513224
+r1
+xCpResource
+xbuild/Release/Facile.app/Contents/Resources/Growl Registration Ticket.growlRegDict
+xGrowl Registration Ticket.growlRegDict
+lSLF07#2@43"Copy Growl Registration Ticket.growlRegDict294221020#294221020#0(0"0(0#0#71"/Users/William/Documents/GitHome/Growl Registration Ticket.growlRegDict2454603888#360"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/William/Documents/GitHome/Growl Registration Ticket.growlRegDict" /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources0#
+
+CCpResource build/Release/Facile.app/Contents/Resources/Changelog Changelog
+s294221020.891111
+e294221020.900101
+r1
+xCpResource
+xbuild/Release/Facile.app/Contents/Resources/Changelog
+xChangelog
+lSLF07#2@14"Copy Changelog294221020#294221020#0(0"0(0#0#42"/Users/William/Documents/GitHome/Changelog2454603888#329"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/Changelog /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources0#
+
+CCpResource build/Release/Facile.app/Contents/Resources/Facile.icns Facile.icns
+s294221020.366100
+e294221020.516187
+r1
+xCpResource
+xbuild/Release/Facile.app/Contents/Resources/Facile.icns
+xFacile.icns
+lSLF07#2@16"Copy Facile.icns294221020#294221020#0(0"0(0#0#44"/Users/William/Documents/GitHome/Facile.icns2454603888#331"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/Facile.icns /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources0#
+
+CCpResource build/Release/Facile.app/Contents/Resources/alert.png alert.png
+s294221020.364928
+e294221020.517572
+r1
+xCpResource
+xbuild/Release/Facile.app/Contents/Resources/alert.png
+xalert.png
+lSLF07#2@14"Copy alert.png294221020#294221020#0(0"0(0#0#42"/Users/William/Documents/GitHome/alert.png2454603888#329"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/alert.png /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources0#
+
+CCpResource build/Release/Facile.app/Contents/Resources/default.png default.png
+s294221020.370207
+e294221020.511874
+r1
+xCpResource
+xbuild/Release/Facile.app/Contents/Resources/default.png
+xdefault.png
+lSLF07#2@16"Copy default.png294221020#294221020#0(0"0(0#0#44"/Users/William/Documents/GitHome/default.png2454603888#331"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/default.png /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources0#
+
+CCpResource build/Release/Facile.app/Contents/Resources/mask.png mask.png
+s294221020.362694
+e294221020.514911
+r1
+xCpResource
+xbuild/Release/Facile.app/Contents/Resources/mask.png
+xmask.png
+lSLF07#2@13"Copy mask.png294221020#294221020#0(0"0(0#0#41"/Users/William/Documents/GitHome/mask.png2454603888#328"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/mask.png /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources0#
+
+CCpResource build/Release/Facile.app/Contents/Resources/menubar.png menubar.png
+s294221020.368378
+e294221020.501584
+r1
+xCpResource
+xbuild/Release/Facile.app/Contents/Resources/menubar.png
+xmenubar.png
+lSLF07#2@16"Copy menubar.png294221020#294221020#0(0"0(0#0#44"/Users/William/Documents/GitHome/menubar.png2454603888#331"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/menubar.png /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources0#
+
+CCreateUniversalBinary /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/MacOS/Facile normal "i386 ppc"
+s294221033.295923
+e294221033.328130
+r1
+xCreateUniversalBinary
+x/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/MacOS/Facile
+xnormal
+xi386 ppc
+lSLF07#2@86"CreateUniversalBinary build/Release/Facile.app/Contents/MacOS/Facile normal "i386 ppc"294221033#294221033#0(0"0(0#0#41"/Users/William/Documents/GitHome/i386 ppc2454603888#353"    cd /Users/William/Documents/GitHome    /usr/bin/lipo -create /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile -output /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/MacOS/Facile0#
+
+CDataModelCompile /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Facile_DataModel.mom /Users/William/Documents/GitHome/Facile_DataModel.xcdatamodel
+s294221029.200571
+e294221029.498822
+r1
+xDataModelCompile
+x/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Facile_DataModel.mom
+x/Users/William/Documents/GitHome/Facile_DataModel.xcdatamodel
+lSLF07#2@69"Compile /Users/William/Documents/GitHome/Facile_DataModel.xcdatamodel294221029#294221029#0(0"0(0#0#61"/Users/William/Documents/GitHome/Facile_DataModel.xcdatamodel2454603888#257"    cd /Users/William/Documents/GitHome    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.5 /Users/William/Documents/GitHome/Facile_DataModel.xcdatamodel /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Resources/Facile_DataModel.mom0#
+
+CLd /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile normal i386
+s294221031.875140
+e294221032.942372
+r1
+xLd
+x/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile
+xnormal
+xi386
+lSLF07#2@104"Link /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile294221031#294221032#0(0"0(0#0#0"2454603888#809"    cd /Users/William/Documents/GitHome    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -filelist /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework Growl -framework Sparkle -framework MKAbeFook -framework BWToolkitFramework -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/i386/Facile0#
+
+CLd /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile normal ppc
+s294221032.967427
+e294221033.295800
+r1
+xLd
+x/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile
+xnormal
+xppc
+lSLF07#2@103"Link /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile294221032#294221033#0(0"0(0#0#0"2454603888#806"    cd /Users/William/Documents/GitHome    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -filelist /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile.LinkFileList -mmacosx-version-min=10.5 -framework Cocoa -framework Growl -framework Sparkle -framework MKAbeFook -framework BWToolkitFramework -o /Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Objects-normal/ppc/Facile0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/BWToolkitFramework.framework /Users/William/BWToolkit/BWToolkitFramework.framework
+r0
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/BWToolkitFramework.framework BWToolkitFramework.framework
+s294221033.328238
+e294221033.958057
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/BWToolkitFramework.framework
+xBWToolkitFramework.framework
+lSLF07#2@33"Copy BWToolkitFramework.framework294221033#294221033#0(0"0(0#0#61"/Users/William/Documents/GitHome/BWToolkitFramework.framework2454603888#349"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/BWToolkitFramework.framework /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/FacileCell.h FacileCell.h
+s294221033.337600
+e294221033.393371
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/FacileCell.h
+xFacileCell.h
+lSLF07#2@17"Copy FacileCell.h294221033#294221033#0(0"0(0#0#45"/Users/William/Documents/GitHome/FacileCell.h2454603888#333"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/FacileCell.h /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/FacileCellDelegate.h FacileCellDelegate.h
+s294221033.339539
+e294221033.381748
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/FacileCellDelegate.h
+xFacileCellDelegate.h
+lSLF07#2@25"Copy FacileCellDelegate.h294221033#294221033#0(0"0(0#0#53"/Users/William/Documents/GitHome/FacileCellDelegate.h2454603888#341"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/FacileCellDelegate.h /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/FacileController.h FacileController.h
+s294221033.335629
+e294221033.394641
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/FacileController.h
+xFacileController.h
+lSLF07#2@23"Copy FacileController.h294221033#294221033#0(0"0(0#0#51"/Users/William/Documents/GitHome/FacileController.h2454603888#339"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/FacileController.h /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/FacileToolbarDelegate.h FacileToolbarDelegate.h
+s294221033.341518
+e294221033.394406
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/FacileToolbarDelegate.h
+xFacileToolbarDelegate.h
+lSLF07#2@28"Copy FacileToolbarDelegate.h294221033#294221033#0(0"0(0#0#56"/Users/William/Documents/GitHome/FacileToolbarDelegate.h2454603888#344"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/FacileToolbarDelegate.h /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/Growl.framework Growl.framework
+s294221033.333619
+e294221033.582346
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/Growl.framework
+xGrowl.framework
+lSLF07#2@20"Copy Growl.framework294221033#294221033#0(0"0(0#0#48"/Users/William/Documents/GitHome/Growl.framework2454603888#336"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/Growl.framework /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/MKAbeFook.framework MKAbeFook.framework
+s294221033.329585
+e294221033.588388
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/MKAbeFook.framework
+xMKAbeFook.framework
+lSLF07#2@24"Copy MKAbeFook.framework294221033#294221033#0(0"0(0#0#52"/Users/William/Documents/GitHome/MKAbeFook.framework2454603888#340"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/MKAbeFook.framework /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CPBXCp build/Release/Facile.app/Contents/Frameworks/Sparkle.framework Sparkle.framework
+s294221033.331484
+e294221034.099985
+r1
+xPBXCp
+xbuild/Release/Facile.app/Contents/Frameworks/Sparkle.framework
+xSparkle.framework
+lSLF07#2@22"Copy Sparkle.framework294221033#294221034#0(0"0(0#0#50"/Users/William/Documents/GitHome/Sparkle.framework2454603888#338"    cd /Users/William/Documents/GitHome    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/William/Documents/GitHome/Sparkle.framework /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Frameworks0#
+
+CProcessInfoPlistFile /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Info.plist Info.plist
+s294221020.322377
+e294221020.340923
+r1
+xProcessInfoPlistFile
+x/Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist294221020#294221020#0(0"0(0#0#43"/Users/William/Documents/GitHome/Info.plist2454603888#286"    cd /Users/William/Documents/GitHome    builtin-infoPlistUtility Info.plist -genpkginfo /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/William/Documents/GitHome/build/Release/Facile.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch.gch Facile_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s294221022.931380
+e294221029.200444
+r1
+xProcessPCH
+x/var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch.gch
+xFacile_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Facile_Prefix.pch294221022#294221029#0(0"0(0#0#50"/Users/William/Documents/GitHome/Facile_Prefix.pch2454603888#1129"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/ppc -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -c /Users/William/Documents/GitHome/Facile_Prefix.pch -o /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-byiuolvlmlwanxcrncljktyxnuvz/Facile_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch.gch Facile_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s294221022.929052
+e294221029.080203
+r1
+xProcessPCH
+x/var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch.gch
+xFacile_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Facile_Prefix.pch294221022#294221029#0(0"0(0#0#50"/Users/William/Documents/GitHome/Facile_Prefix.pch2454603888#1134"    cd /Users/William/Documents/GitHome    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/Facile.hmap -F/Users/William/Documents/GitHome/build/Release -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome -F/Users/William/Documents/GitHome/../../BWToolkit -F/Users/William/Documents/GitHome -I/Users/William/Documents/GitHome/build/Release/include -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources/i386 -I/Users/William/Documents/GitHome/build/Facile.build/Release/Facile.build/DerivedSources -c /Users/William/Documents/GitHome/Facile_Prefix.pch -o /var/folders/qh/qhdm2S6GEB8vrqy1-A7UYU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Facile_Prefix-gocpsytsbgpfshbfnxpoyngqbkdp/Facile_Prefix.pch.gch0#
+
+CTouch /Users/William/Documents/GitHome/build/Release/Facile.app
+s294221034.100099
+e294221034.116394
+r1
+xTouch
+x/Users/William/Documents/GitHome/build/Release/Facile.app
+lSLF07#2@63"Touch /Users/William/Documents/GitHome/build/Release/Facile.app294221034#294221034#0(0"0(0#0#0"2454603888#120"    cd /Users/William/Documents/GitHome    /usr/bin/touch -c /Users/William/Documents/GitHome/build/Release/Facile.app0#
+

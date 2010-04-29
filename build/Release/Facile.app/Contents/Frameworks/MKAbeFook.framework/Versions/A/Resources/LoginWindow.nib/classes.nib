@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = HUDWindow; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }, 
+        {
+            ACTIONS = {closeSheet = id; }; 
+            CLASS = MKLoginWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {closeSheetButton = NSButton; loginWebView = WebView; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

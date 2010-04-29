@@ -44,4 +44,5 @@
 }
 
 
+@synthesize mask;
 @end

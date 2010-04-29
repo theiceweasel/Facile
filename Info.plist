@@ -25,7 +25,7 @@
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>LSUIElement</key>
-	<string>1</string>
+	<false/>
 	<key>SUFeedURL</key>
 	<string>http://osx.iusethis.com/appcast/facile</string>
 	<key>SUScheduledCheckInterval</key>

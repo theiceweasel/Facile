@@ -3,7 +3,7 @@
 //  Facile
 //
 //  Created by Eli Dourado on 11/16/07.
-//  Copyright 2007 Eli Dourado. All rights reserved.
+// Edited By William Whitlock                                                                                                    
 //
 
 #import "FacileController.h"
@@ -23,6 +23,9 @@
 	[defaultPrefs setObject:@"1" forKey:@"timeDelay"];
 	[defaultPrefs setObject:@"0" forKey:expiredkey];
 	[defaultPrefs setObject:@"0.9" forKey:@"alpha"];
+	[defaultPrefs setObject:@"7" forKey:@"eraseAfter"];
+	[defaultPrefs setObject:@"NO" forKey:@"statusMenuBOOL"];
+	NSLog(@"%@",defaultPrefs);
 	prefs = [[NSUserDefaults standardUserDefaults] retain];
 	[prefs registerDefaults:defaultPrefs];
 	if ([[NSDate date] compare:[NSDate dateWithNaturalLanguageString:@"January 15, 2009"]]==NSOrderedDescending) {
@@ -40,11 +43,7 @@
 {
 	context = [[NSApp delegate] managedObjectContext];
 	[mainWindow bind:@"alphaValue" toObject:prefs withKeyPath:@"alpha" options:nil];
-	toolbar=[[NSToolbar alloc] initWithIdentifier:@"toolbar"];
 	[toolbar setDelegate:toolbarDelegate];
-	[toolbar setDisplayMode:NSToolbarDisplayModeIconOnly];
-	[toolbar setSizeMode:NSToolbarSizeModeSmall];
-	[topMenuItem setImage:[NSImage imageNamed:@"Gear.icns"]];
 	[mainWindow setToolbar:toolbar];
 	[NSApp activateIgnoringOtherApps:YES];
 	
@@ -63,8 +62,19 @@
 	[statusItem setTarget:self];
 	[statusItem setAction:@selector(toggleWindow:)];
 	[statusItem setEnabled:YES];
+	if ([prefs valueForKey:@"statusMenuBOOL"]==@"YES") {
+		[statusItem setMenu:statusMenu];
+	}
 	
 	[self login];
+}
+
+-(void)setAgent
+{
+	NSString *agentValue = [NSString stringWithFormat:@"%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"LSUIElement"]];
+	
+	NSLog(@"%@",agentValue);
+
 }
 
 - (void)expire
@@ -129,9 +139,7 @@
 		NSArray *friendData = [fb arrayFromXMLResponse:xmlDocument];
 		NSMutableArray *updatedStatuses = [[NSMutableArray alloc] initWithObjects:nil];
 		
-		int i;
-		for(i=0; i<[friendData count]; i++){
-			NSDictionary *friend = [friendData objectAtIndex:i];
+		for(NSDictionary *friend in friendData){
 			if([[friend valueForKey:@"uid"] isEqualToString:[fb uid]]){
 				if([[friend objectForKey:@"status"] valueForKey:@"message"] != nil){
 					[[statusField cell] setPlaceholderString:[NSString stringWithFormat:@"%@ %@",[friend valueForKey:@"name"],[[friend objectForKey:@"status"] valueForKey:@"message"]]]; 
@@ -153,7 +161,7 @@
 				if([dupes count]==0){
 					[updatedStatuses addObject:friend];
 					[context lock];
-					//NSLog(@"lock");
+					NSLog(@"lock");
 					NSManagedObject *status = [NSEntityDescription insertNewObjectForEntityForName:@"Status" inManagedObjectContext:context];
 					[status setValue:[friend valueForKey:@"name"] forKey:@"name"];
 					[status setValue:uid forKey:@"uid"];
@@ -161,7 +169,7 @@
 					[status setValue:[[friend objectForKey:@"status"] valueForKey:@"message"] forKey:@"message"];
 					[status setValue:time forKey:@"time"];
 					[context unlock];
-					//NSLog(@"unlock");					
+					NSLog(@"unlock");					
 				}
 			}
 		}
@@ -183,9 +191,7 @@
 	}	
 	if([updates count] < 6){
 		
-		int k;
-		for(k=0; k<[updates count]; k++){
-			NSDictionary *friend = [updates objectAtIndex:k];
+		for(NSDictionary *friend in updates){
 			NSData *iconData;
 			if([[friend valueForKey:@"pic_square"] length]>0){
 				iconData=[NSData dataWithContentsOfURL:[NSURL URLWithString:[friend valueForKey:@"pic_square"]]];
@@ -358,17 +364,35 @@
 	// clearing out statuses older than 1 week
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	[request setEntity:[NSEntityDescription entityForName:@"Status" inManagedObjectContext:context]];		
-	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(time < %@)",[[NSDate date] addTimeInterval:-604800]];
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"(time < %@)",[[NSDate date] addTimeInterval:-(60 *60 * 24 * [[prefs valueForKey:@"eraseAfter"] intValue])]];
 	[request setPredicate:predicate];
 	
 	NSArray *oldstatuses = [context executeFetchRequest:request error:nil];
 	[request autorelease];
 	
-	int i;
-	for(i=0;i<[oldstatuses count];i++){
-		[context deleteObject:[oldstatuses objectAtIndex:i]];
+	for(id loopItem in oldstatuses){
+		[context deleteObject:loopItem];
 	}
 	[NSApp terminate:nil];
 }
 
+@synthesize statusItem;
+@synthesize statusMenu;
+@synthesize mainTimer;
+@synthesize prefs;
+@synthesize context;
+@synthesize fb;
+@synthesize statusSortOrder;
+@synthesize toolbar;
+@synthesize updater;
+@synthesize mainWindow;
+@synthesize progress;
+@synthesize data;
+@synthesize table;
+@synthesize topMenuItem;
+@synthesize loginoutMenuItem;
+@synthesize expiredkey;
+@synthesize cellDelegate;
+@synthesize toolbarDelegate;
+@synthesize statusField;
 @end

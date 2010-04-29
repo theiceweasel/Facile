@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {930, 424}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 100}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Release;
+		activeExecutable = 3D1731A6118686A3000FCC9B /* Facile */;
+		activeTarget = 8D1107260486CEB800E47090 /* Facile */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Facile */,
+		);
+		breakpoints = (
+			3DB45D161186BAF1003A8ACF /* FacileController.m:142 */,
+			3D6869141187D18600D53D5E /* FacileController.m:121 */,
+			3D6869201187D1BB00D53D5E /* FacileController.m:116 */,
+			3D6869221187D1BE00D53D5E /* FacileController.m:124 */,
+			3D6869241187D1C000D53D5E /* FacileController.m:114 */,
+			3D68692E1187D1E500D53D5E /* FacileController.m:135 */,
+			3DDEEE591189007300E5EEF5 /* FacileController.m:185 */,
+			3D31FCE61189435C00EAF5C6 /* FacileController.m:72 */,
+			3D31FCE81189435F00EAF5C6 /* FacileController.m:66 */,
+		);
+		codeSenseManager = 3D1731CC118686B1000FCC9B /* Code sense */;
+		executables = (
+			3D1731A6118686A3000FCC9B /* Facile */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					752,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1034,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 294220922;
+			PBXWorkspaceStateSaveDate = 294220922;
+		};
+		perUserProjectItems = {
+			3D173270118692B5000FCC9B = 3D173270118692B5000FCC9B /* PBXTextBookmark */;
+			3D1C22D71186E9D0003A51AC = 3D1C22D71186E9D0003A51AC /* PBXTextBookmark */;
+			3D1C231C1186F0E7003A51AC = 3D1C231C1186F0E7003A51AC /* PBXBookmark */;
+			3D31FC1F1189262000EAF5C6 = 3D31FC1F1189262000EAF5C6 /* PBXTextBookmark */;
+			3D31FC9311893E6D00EAF5C6 = 3D31FC9311893E6D00EAF5C6 /* PBXTextBookmark */;
+			3D31FC9411893E6D00EAF5C6 = 3D31FC9411893E6D00EAF5C6 /* PBXTextBookmark */;
+			3D31FC9511893E6D00EAF5C6 = 3D31FC9511893E6D00EAF5C6 /* PBXTextBookmark */;
+			3D31FC9711893E6D00EAF5C6 = 3D31FC9711893E6D00EAF5C6 /* PBXTextBookmark */;
+			3D31FCCE1189431800EAF5C6 = 3D31FCCE1189431800EAF5C6 /* PBXTextBookmark */;
+			3D31FCFC118944F700EAF5C6 = 3D31FCFC118944F700EAF5C6 /* PBXTextBookmark */;
+			3D31FCFD118944F700EAF5C6 = 3D31FCFD118944F700EAF5C6 /* PBXTextBookmark */;
+			3D31FCFE118944F700EAF5C6 = 3D31FCFE118944F700EAF5C6 /* PBXTextBookmark */;
+			3D31FD2A118948AA00EAF5C6 = 3D31FD2A118948AA00EAF5C6 /* PBXTextBookmark */;
+			3D31FD2B118948AA00EAF5C6 = 3D31FD2B118948AA00EAF5C6 /* PBXTextBookmark */;
+			3D31FD2C118948AA00EAF5C6 = 3D31FD2C118948AA00EAF5C6 /* PlistBookmark */;
+			3D31FD6511895D6B00EAF5C6 = 3D31FD6511895D6B00EAF5C6 /* PBXTextBookmark */;
+			3D6868791187CBB400D53D5E = 3D6868791187CBB400D53D5E /* PBXBookmark */;
+			3D68687A1187CBB400D53D5E = 3D68687A1187CBB400D53D5E /* PBXBookmark */;
+			3DA3904711896B1600545661 = 3DA3904711896B1600545661 /* PBXTextBookmark */;
+			3DA3905B1189748100545661 /* PBXTextBookmark */ = 3DA3905B1189748100545661 /* PBXTextBookmark */;
+			3DB45CEB1186B9F2003A8ACF = 3DB45CEB1186B9F2003A8ACF /* PBXTextBookmark */;
+			3DB45D3E1186C05E003A8ACF = 3DB45D3E1186C05E003A8ACF /* PBXTextBookmark */;
+			3DB45D411186C05E003A8ACF = 3DB45D411186C05E003A8ACF /* PBXTextBookmark */;
+			3DC296711186E6B00060D1AB = 3DC296711186E6B00060D1AB /* PBXBookmark */;
+			3DC296771186E6B00060D1AB = 3DC296771186E6B00060D1AB /* PBXTextBookmark */;
+			3DDEEE6E1189089E00E5EEF5 = 3DDEEE6E1189089E00E5EEF5 /* PBXTextBookmark */;
+			3DEA2A021186CC2500CB15C0 = 3DEA2A021186CC2500CB15C0 /* PBXTextBookmark */;
+			3DFD39261187A96600880EEC = 3DFD39261187A96600880EEC /* XDModelBookmark */;
+		};
+		sourceControlManager = 3D1731CB118686B1000FCC9B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {930, 424}}";
+			sepNavSelRange = "{252, 0}";
+			sepNavVisRange = "{0, 252}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* Facile_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1251, 532}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 143}";
+		};
+	};
+	3D1731A6118686A3000FCC9B /* Facile */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Facile;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	3D1731CB118686B1000FCC9B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	3D1731CC118686B1000FCC9B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3D173270118692B5000FCC9B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3D173271118692B5000FCC9B /* HMAppKitEx.h */;
+		name = "HMAppKitEx.h: 125";
+		rLen = 21;
+		rLoc = 3677;
+		rType = 0;
+		vrLen = 1061;
+		vrLoc = 3043;
+	};
+	3D173271118692B5000FCC9B /* HMAppKitEx.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = HMAppKitEx.h;
+		path = "/Users/William/Downloads/elidourado-Facile-ab84a3e/HMBlkAppKit.framework/Versions/A/Headers/HMAppKitEx.h";
+		sourceTree = "<absolute>";
+	};
+	3D1C22D21186E829003A51AC /* Changelog */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1251, 502}}";
+			sepNavSelRange = "{161, 0}";
+			sepNavVisRange = "{0, 161}";
+		};
+	};
+	3D1C22D71186E9D0003A51AC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3D1C22D21186E829003A51AC /* Changelog */;
+		name = "Changelog: 10";
+		rLen = 0;
+		rLoc = 161;
+		rType = 0;
+		vrLen = 161;
+		vrLoc = 0;
+	};
+	3D1C231C1186F0E7003A51AC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 454AB0D40CF14BA10089D18B /* alert.png */;
+	};
+	3D31FC1F1189262000EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45FEB56B0D0E46720047B977 /* FacileCellDelegate.m */;
+		name = "FacileCellDelegate.m: 24";
+		rLen = 6;
+		rLoc = 419;
+		rType = 0;
+		vrLen = 1278;
+		vrLoc = 178;
+	};
+	3D31FC9311893E6D00EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* Facile_AppDelegate.m */;
+		name = "Facile_AppDelegate.m: 35";
+		rLen = 13;
+		rLoc = 1094;
+		rType = 0;
+		vrLen = 1552;
+		vrLoc = 508;
+	};
+	3D31FC9411893E6D00EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45A322CA0CEF8B4F00B5BF30 /* FacileCell.m */;
+		name = "FacileCell.m: 36";
+		rLen = 0;
+		rLoc = 799;
+		rType = 0;
+		vrLen = 1634;
+		vrLoc = 0;
+	};
+	3D31FC9511893E6D00EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45FEB6040D0E4A880047B977 /* FacileToolbarDelegate.h */;
+		name = "FacileToolbarDelegate.h: 13";
+		rLen = 22;
+		rLoc = 221;
+		rType = 0;
+		vrLen = 591;
+		vrLoc = 0;
+	};
+	3D31FC9711893E6D00EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45FEB56A0D0E46720047B977 /* FacileCellDelegate.h */;
+		name = "FacileCellDelegate.h: 15";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 295;
+		vrLoc = 0;
+	};
+	3D31FCCE1189431800EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 15";
+		rLen = 0;
+		rLoc = 252;
+		rType = 0;
+		vrLen = 252;
+		vrLoc = 0;
+	};
+	3D31FCE61189435C00EAF5C6 /* FacileController.m:72 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-setAgent";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 72;
+		location = Facile;
+		modificationTime = 294212361.470404;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3D31FCE81189435F00EAF5C6 /* FacileController.m:66 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-awakeFromNib";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 66;
+		location = Facile;
+		modificationTime = 294212361.469358;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3D31FCFC118944F700EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280B06725ACE000B614F /* Facile_AppDelegate.h */;
+		name = "Facile_AppDelegate.h: 16";
+		rLen = 0;
+		rLoc = 407;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 0;
+	};
+	3D31FCFD118944F700EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45A322C90CEF8B4F00B5BF30 /* FacileCell.h */;
+		name = "FacileCell.h: 11";
+		rLen = 0;
+		rLoc = 237;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 0;
+	};
+	3D31FCFE118944F700EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45DD14E40CEE6042005CEB78 /* FacileController.h */;
+		name = "FacileController.h: 55";
+		rLen = 0;
+		rLoc = 1625;
+		rType = 0;
+		vrLen = 1186;
+		vrLoc = 1166;
+	};
+	3D31FD2A118948AA00EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 100;
+		vrLoc = 0;
+	};
+	3D31FD2B118948AA00EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45CD16710CF0E98F0014AF69 /* Growl Registration Ticket.growlRegDict */;
+		name = "Growl Registration Ticket.growlRegDict: 8";
+		rLen = 6;
+		rLoc = 280;
+		rType = 0;
+		vrLen = 401;
+		vrLoc = 0;
+	};
+	3D31FD2C118948AA00EAF5C6 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSUIElement,
+		);
+		name = "/Users/William/Desktop/elidourado-Facile-ab84a3e/Info.plist";
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	3D31FD6511895D6B00EAF5C6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		name = "FacileController.m: 68";
+		rLen = 0;
+		rLoc = 2493;
+		rType = 0;
+		vrLen = 2316;
+		vrLoc = 3925;
+	};
+	3D6868791187CBB400D53D5E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 454AB0D50CF14BA10089D18B /* Facile.icns */;
+	};
+	3D68687A1187CBB400D53D5E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 45C01DF50CFE0AA600FE30D8 /* default.png */;
+	};
+	3D6869141187D18600D53D5E /* FacileController.m:121 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-setTimeDelay";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 121;
+		location = Facile;
+		modificationTime = 294212361.46965;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3D6869201187D1BB00D53D5E /* FacileController.m:116 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-setTimeDelay";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 116;
+		location = Facile;
+		modificationTime = 294212361.46986;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3D6869221187D1BE00D53D5E /* FacileController.m:124 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-timer:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 124;
+		location = Facile;
+		modificationTime = 294212361.471868;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3D6869241187D1C000D53D5E /* FacileController.m:114 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-setTimeDelay";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 114;
+		location = Facile;
+		modificationTime = 294212361.470032;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3D68692E1187D1E500D53D5E /* FacileController.m:135 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-gotSomeData:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 135;
+		location = Facile;
+		modificationTime = 294212361.468992;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3DA3904711896B1600545661 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		name = "FacileController.m: 68";
+		rLen = 0;
+		rLoc = 2493;
+		rType = 0;
+		vrLen = 2429;
+		vrLoc = 3817;
+	};
+	3DA3905B1189748100545661 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		name = "FacileController.m: 68";
+		rLen = 0;
+		rLoc = 2493;
+		rType = 0;
+		vrLen = 2424;
+		vrLoc = 3817;
+	};
+	3DB45C9C1186B251003A8ACF /* FacileCell.m */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = FacileCell.m;
+		path = "/Users/William/Downloads/elidourado-Facile-ab84a3e/FacileCell.m";
+		sourceTree = "<absolute>";
+	};
+	3DB45CE61186B9F2003A8ACF /* MKFacebook.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = MKFacebook.h;
+		path = "/Users/William/Downloads/elidourado-Facile-ab84a3e/MKAbeFook.framework/Headers/MKFacebook.h";
+		sourceTree = "<absolute>";
+	};
+	3DB45CEB1186B9F2003A8ACF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DB45C9C1186B251003A8ACF /* FacileCell.m */;
+		name = "FacileCell.m: 68";
+		rLen = 0;
+		rLoc = 1548;
+		rType = 0;
+		vrLen = 1570;
+		vrLoc = 3468;
+	};
+	3DB45D161186BAF1003A8ACF /* FacileController.m:142 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-userLoginSuccessful";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 142;
+		location = Facile;
+		modificationTime = 294212361.4722201;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3DB45D3E1186C05E003A8ACF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DB45D3F1186C05E003A8ACF /* MKAbeFook.h */;
+		name = "MKAbeFook.h: 10";
+		rLen = 30;
+		rLoc = 104;
+		rType = 0;
+		vrLen = 358;
+		vrLoc = 0;
+	};
+	3DB45D3F1186C05E003A8ACF /* MKAbeFook.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = MKAbeFook.h;
+		path = "/Users/William/Downloads/elidourado-Facile-ab84a3e/MKAbeFook.framework/Headers/MKAbeFook.h";
+		sourceTree = "<absolute>";
+	};
+	3DB45D411186C05E003A8ACF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DB45CE61186B9F2003A8ACF /* MKFacebook.h */;
+		name = "MKFacebook.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2335;
+		vrLoc = 21;
+	};
+	3DC296711186E6B00060D1AB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 454AB0D60CF14BA10089D18B /* menubar.png */;
+	};
+	3DC296771186E6B00060D1AB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* Facile_Prefix.pch */;
+		name = "Facile_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 143;
+		vrLoc = 0;
+	};
+	3DDEEE591189007300E5EEF5 /* FacileController.m:185 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 45DD14E50CEE6042005CEB78 /* FacileController.m */;
+		functionName = "-gotSomeData:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 185;
+		location = Facile;
+		modificationTime = 294212361.47023;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	3DDEEE6E1189089E00E5EEF5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45FEB6050D0E4A880047B977 /* FacileToolbarDelegate.m */;
+		name = "FacileToolbarDelegate.m: 48";
+		rLen = 0;
+		rLoc = 1364;
+		rType = 0;
+		vrLen = 1164;
+		vrLoc = 144;
+	};
+	3DEA29B51186CA6500CB15C0 /* FacileController.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = FacileController.h;
+		path = "/Users/William/Downloads/elidourado-Facile-ab84a3e/FacileController.h";
+		sourceTree = "<absolute>";
+	};
+	3DEA2A021186CC2500CB15C0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3DEA29B51186CA6500CB15C0 /* FacileController.h */;
+		name = "FacileController.h: 57";
+		rLen = 0;
+		rLoc = 1579;
+		rType = 0;
+		vrLen = 1197;
+		vrLoc = 245;
+	};
+	3DFD39261187A96600880EEC /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 770B37EC0679A11B001EADE2 /* Facile_DataModel.xcdatamodel */;
+		fallbackIsa = PBXBookmark;
+	};
+	45A322C90CEF8B4F00B5BF30 /* FacileCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1153, 598}}";
+			sepNavSelRange = "{237, 0}";
+			sepNavVisRange = "{0, 976}";
+		};
+	};
+	45A322CA0CEF8B4F00B5BF30 /* FacileCell.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{200, 155}\";\n            s = 0;\n        },\n                {\n            r = \"{389, 137}\";\n            s = 0;\n        },\n                {\n            c =             (\n                                {\n                    r = \"{657, 140}\";\n                    s = 0;\n                }\n            );\n            r = \"{577, 222}\";\n            s = 0;\n        },\n                {\n            r = \"{821, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{927, 59}\";\n            s = 0;\n        },\n                {\n            r = \"{1038, 74}\";\n            s = 0;\n        },\n                {\n            r = \"{1166, 78}\";\n            s = 0;\n        },\n                {\n            r = \"{1296, 72}\";\n            s = 0;\n        },\n                {\n            r = \"{1392, 123}\";\n            s = 0;\n        },\n                {\n            r = \"{1816, 58}\";\n            s = 0;\n        },\n                {\n            r = \"{2127, 78}\";\n            s = 0;\n        },\n                {\n            l = \"float x\";\n            r = \"{3564, 11}\";\n            s = 1;\n        },\n                {\n            l = \"float y\";\n            r = \"{3576, 11}\";\n            s = 1;\n        },\n                {\n            l = \"float w\";\n            r = \"{3588, 11}\";\n            s = 1;\n        },\n                {\n            l = \"float h\";\n            r = \"{3600, 11}\";\n            s = 1;\n        },\n                {\n            r = \"{3919, 204}\";\n            s = 0;\n        },\n                {\n            r = \"{4494, 213}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 5081}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {700, 1443}}";
+			sepNavSelRange = "{288, 0}";
+			sepNavVisRange = "{0, 665}";
+		};
+	};
+	45CD16710CF0E98F0014AF69 /* Growl Registration Ticket.growlRegDict */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {930, 424}}";
+			sepNavSelRange = "{280, 6}";
+			sepNavVisRange = "{0, 401}";
+		};
+	};
+	45DD14E40CEE6042005CEB78 /* FacileController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 1027}}";
+			sepNavSelRange = "{1625, 0}";
+			sepNavVisRange = "{1166, 1186}";
+			sepNavWindowFrame = "{{15, 96}, {750, 932}}";
+		};
+	};
+	45DD14E50CEE6042005CEB78 /* FacileController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{3105, 273}\";\n            s = 0;\n        },\n                {\n            r = \"{3417, 233}\";\n            s = 0;\n        },\n                {\n            r = \"{3709, 20}\";\n            s = 0;\n        },\n                {\n            r = \"{4249, 498}\";\n            s = 0;\n        },\n                {\n            r = \"{9497, 85}\";\n            s = 0;\n        },\n                {\n            r = \"{9616, 48}\";\n            s = 0;\n        },\n                {\n            c =             (\n                                {\n                    r = \"{9723, 152}\";\n                    s = 0;\n                },\n                                {\n                    r = \"{9883, 18}\";\n                    s = 0;\n                }\n            );\n            r = \"{9699, 204}\";\n            s = 0;\n        },\n                {\n            r = \"{10439, 280}\";\n            s = 0;\n        },\n                {\n            r = \"{10756, 434}\";\n            s = 0;\n        },\n                {\n            r = \"{11228, 381}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 13270}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {2070, 4030}}";
+			sepNavSelRange = "{2493, 0}";
+			sepNavVisRange = "{3294, 1927}";
+			sepNavWindowFrame = "{{414, 96}, {750, 932}}";
+		};
+	};
+	45FEB56A0D0E46720047B977 /* FacileCellDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 438}}";
+			sepNavSelRange = "{254, 0}";
+			sepNavVisRange = "{0, 295}";
+		};
+	};
+	45FEB56B0D0E46720047B977 /* FacileCellDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1202, 637}}";
+			sepNavSelRange = "{419, 6}";
+			sepNavVisRange = "{178, 1278}";
+		};
+	};
+	45FEB6040D0E4A880047B977 /* FacileToolbarDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 438}}";
+			sepNavSelRange = "{221, 22}";
+			sepNavVisRange = "{0, 591}";
+		};
+	};
+	45FEB6050D0E4A880047B977 /* FacileToolbarDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2224, 650}}";
+			sepNavSelRange = "{1364, 0}";
+			sepNavVisRange = "{144, 1164}";
+			sepNavWindowFrame = "{{15, 96}, {750, 932}}";
+		};
+	};
+	770B37EC0679A11B001EADE2 /* Facile_DataModel.xcdatamodel */ = {
+		uiCtxt = {
+			"Xdesign Model Editor Bookmark Key" = {
+				UIContextForDetailArea = {
+					_indexOfSelectedPane = 0;
+					_indexOfSelectedView = 1;
+				};
+				UIContextForEntityArea = {
+					_indexOfSelectedView = 0;
+					chosenTableColumnns = (
+						"ET Entity",
+						"ET Abstract",
+						"ET Class",
+					);
+					chosenTableColumnns_sortDirections = (
+						YES,
+					);
+					chosenTableColumnns_sortKeys = (
+						name,
+					);
+					chosenTableColumnns_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableWidths = (
+						103.000000,
+						22.000000,
+						203.080078,
+					);
+				};
+				UIContextForLayoutManager = {
+					detailSplitGeometry = {
+						_collapsingFrameDimension = 0;
+						_indexOfCollapsedView = 0;
+						_percentageOfCollapsedView = 0;
+						isCollapsed = yes;
+						sizes = (
+							"{{0, 0}, {1088, 220}}",
+							"{{1093, 0}, {572, 220}}",
+						);
+					};
+					diagramSplitGeometry = {
+						_collapsingFrameDimension = 0;
+						_indexOfCollapsedView = 0;
+						_percentageOfCollapsedView = 0;
+						isCollapsed = yes;
+						sizes = (
+							"{{0, 0}, {1665, 220}}",
+							"{{0, 225}, {1665, 594}}",
+						);
+					};
+					tableSplitGeometry = {
+						_collapsingFrameDimension = 0;
+						_indexOfCollapsedView = 0;
+						_percentageOfCollapsedView = 0;
+						isCollapsed = yes;
+						sizes = (
+							"{{0, 0}, {353, 220}}",
+							"{{358, 0}, {730, 220}}",
+						);
+					};
+				};
+				UIContextForPropertyArea = {
+					_indexOfSelectedView = 0;
+					chosenTableColumnnFRTs = (
+						"FT Fetch Request",
+						"FT Predicate",
+					);
+					chosenTableColumnnFRTs_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnFRTs_sortKeys = (
+						name,
+					);
+					chosenTableColumnnFRTs_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsAT = (
+						"AT Attribute",
+						"AT Type",
+					);
+					chosenTableColumnnsAT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsAT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsAT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsFPT = (
+						"FP FetchedProperty",
+						"FP Destination",
+						"FP Predicate",
+					);
+					chosenTableColumnnsFPT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsFPT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsFPT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsPT = (
+						"PT Property",
+						"PT Kind",
+						"PT SharedKeyOne",
+					);
+					chosenTableColumnnsPT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsPT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsPT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableColumnnsRT = (
+						"RT Relationship",
+						"RT Destination",
+					);
+					chosenTableColumnnsRT_sortDirections = (
+						YES,
+					);
+					chosenTableColumnnsRT_sortKeys = (
+						name,
+					);
+					chosenTableColumnnsRT_sortSelectors = (
+						"_xdcaseInsensitiveNumericCompare:",
+					);
+					chosenTableWidthsAT = (
+						128.000000,
+						64.000000,
+					);
+					chosenTableWidthsFPT = (
+						128.000000,
+						64.000000,
+						144.764160,
+					);
+					chosenTableWidthsFRT = (
+						128.000000,
+						249.764160,
+					);
+					chosenTableWidthsPT = (
+						128.000000,
+						108.110840,
+						467.570801,
+					);
+					chosenTableWidthsRT = (
+						128.000000,
+						64.000000,
+					);
+				};
+				"xdesign model browser state key - shown/hidden" = 1;
+				"xdesign model diagram view visible rect key" = "{{-501, -74}, {1650, 579}}";
+			};
+			sepNavWindowFrame = "{{15, 96}, {1665, 932}}";
+		};
+	};
+	77C8280B06725ACE000B614F /* Facile_AppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {930, 424}}";
+			sepNavSelRange = "{407, 0}";
+			sepNavVisRange = "{0, 713}";
+		};
+	};
+	77C8280C06725ACE000B614F /* Facile_AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1135, 430}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6552}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {930, 2483}}";
+			sepNavSelRange = "{1094, 13}";
+			sepNavVisRange = "{508, 1139}";
+		};
+	};
+	8D1107260486CEB800E47090 /* Facile */ = {
+		activeExec = 0;
+		executables = (
+			3D1731A6118686A3000FCC9B /* Facile */,
+		);
+	};
+	8D1107310486CEB800E47090 /* Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 96}, {750, 932}}";
+		};
+	};
+}

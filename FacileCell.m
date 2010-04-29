@@ -66,7 +66,7 @@
 }
 
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView {
-	[self setTextColor:[NSColor blackColor]];
+	[self setTextColor:[NSColor whiteColor]];
 	
 	NSObject* data = [self objectValue];
 	
@@ -83,7 +83,7 @@
 		elementDisabled = [[self dataDelegate] disabledForCell: self data: data];
 	}
 	
-	NSColor* primaryColor   = [self isHighlighted] ? [NSColor alternateSelectedControlTextColor] : (elementDisabled? [NSColor disabledControlTextColor] : [NSColor textColor]);
+	NSColor* primaryColor   = [self isHighlighted] ? [NSColor alternateSelectedControlTextColor] : (elementDisabled? [NSColor disabledControlTextColor] : [NSColor whiteColor]);
 	NSString* primaryText   = [[self dataDelegate] primaryTextForCell:self data: data];
 	
 	NSDictionary* primaryTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys: primaryColor, NSForegroundColorAttributeName,
@@ -91,7 +91,7 @@
 //	[primaryText drawAtPoint:NSMakePoint(cellFrame.origin.x+cellFrame.size.height+10, cellFrame.origin.y) withAttributes:primaryTextAttributes];
 	[primaryText drawAtPoint:NSMakePoint(cellFrame.origin.x+60, cellFrame.origin.y) withAttributes:primaryTextAttributes];
 	
-	NSColor* secondaryColor = [self isHighlighted] ? [NSColor alternateSelectedControlTextColor] : [NSColor disabledControlTextColor];
+	NSColor* secondaryColor = [self isHighlighted] ? [NSColor alternateSelectedControlTextColor] : (elementDisabled? [NSColor disabledControlTextColor] : [NSColor whiteColor]);
 	NSString* secondaryText = [[self dataDelegate] secondaryTextForCell:self data: data];
 	NSDictionary* secondaryTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys: secondaryColor, NSForegroundColorAttributeName,
 		[NSFont systemFontOfSize:10], NSFontAttributeName, nil];	
@@ -133,4 +133,5 @@
 	[[NSGraphicsContext currentContext] restoreGraphicsState];	
 }
 
+@synthesize delegate;
 @end

@@ -3,7 +3,7 @@
 //  Facile
 //
 //  Created by Eli Dourado on 11/16/07.
-//  Copyright Eli Dourado 2007 . All rights reserved.
+//  //  // Edited By William Whitlock                                                   Eli Dourado 2007 . All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
@@ -23,4 +23,5 @@
 
 - (IBAction)saveAction:sender;
 
+@property (retain) NSWindow *window;
 @end
