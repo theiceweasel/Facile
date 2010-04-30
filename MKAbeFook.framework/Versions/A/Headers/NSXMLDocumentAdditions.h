@@ -1,8 +1,8 @@
 //
-//  LoginWindow.h
+//  NSXMLDocumentAdditions.h
 //  MKAbeFook
 //
-//  Created by Mike on 10/11/06.
+//  Created by Mike Kinney on 12/15/07.
 /*
  Copyright (c) 2009, Mike Kinney
  All rights reserved.
@@ -16,43 +16,27 @@
  
  */
 
+//Parsing methods originally written by Josh Wiseman (Facebook, Inc.) and distributed with the iPhoto plugin. modifications made by Mike Kinney 
+
 #import <Cocoa/Cocoa.h>
-//0.6 case sensitivity issue fixed.  Thanks Dale.
-#import <WebKit/WebKit.h>
-@interface MKLoginWindow : NSWindowController  {
-	NSString *path;
-	IBOutlet WebView *loginWebView;
-	IBOutlet NSButton *closeWindowButton; 
-	
-	BOOL _loginWindowIsSheet;
-	
-	IBOutlet NSProgressIndicator *loadingWindowProgressIndicator; //used to display activity while setting up everything needed before facebook login page can even be requested.  auth token etc... added in 0.7.7
-	
-	IBOutlet NSProgressIndicator *loadingWebViewProgressIndicator;
-	
-	id _delegate; //the place where userLoginSuccessfull will be called
-	
-	BOOL runModally;
-}
-
-@property BOOL _loginWindowIsSheet;
-@property (nonatomic, retain) id _delegate;
-@property BOOL runModally;
-
--(id)init;
 
 
+@interface NSXMLDocument (NSXMLDocumentAdditions)
 
--(void)displayLoadingWindowIndicator;
--(void)hideLoadingWindowIndicator;
+/*! @name Validating
+ *	Validates XML from Facebook.
+ */
+//@{
 
--(void)loadURL:(NSURL *)loginURL;
--(IBAction)closeWindow:(id)sender;
--(void)windowWillClose:(NSNotification *)aNotification;
--(void)setWindowSize:(NSSize)windowSize;
+/*!
+ @brief Checks to see if NSXMLDocument is a valid response from Facebook.
+ 
+ Returns FALSE if document contains an error.
+ 
+ @return BOOL
+ */
+-(BOOL)validFacebookResponse;
 
+//@}	//ENDS Validating group
 
-#pragma mark WebView Delegate Methods
-- (void)webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame;
-- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
 @end

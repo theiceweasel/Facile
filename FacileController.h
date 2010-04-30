@@ -2,77 +2,62 @@
 //  FacileController.h
 //  Facile
 //
-//  Created by Eli Dourado on 11/16/07.
-//  // Edited By William Whitlock                                                                                                    
+//  Created by William Whitlock on 4/27/10.
+//  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import <Sparkle/Sparkle.h>
 #import <Cocoa/Cocoa.h>
 #import <MKAbeFook/MKAbeFook.h>
 #import <Growl/Growl.h>
-#import <WebKit/WebKit.h>
 #import "FacileCell.h"
 #import "FacileCellDelegate.h"
 #import "FacileToolbarDelegate.h"
 
-@interface FacileController : NSObject <GrowlApplicationBridgeDelegate> {
-	NSStatusItem *statusItem;
-	NSTimer *mainTimer;
-	NSUserDefaults *prefs;
-	NSManagedObjectContext *context;
-	MKFacebook *fb;
-	NSArray *statusSortOrder;
-	IBOutlet NSToolbar *toolbar;
-	IBOutlet SUUpdater *updater;
+@interface FacileController : NSObject {
 	IBOutlet NSPanel *mainWindow;
-	IBOutlet NSTextField *statusField;
-	IBOutlet NSProgressIndicator *progress;
+	IBOutlet SUUpdater *updater;
+	IBOutlet NSToolbar *toolbar;
+	IBOutlet FacileToolbarDelegate *toolbarDelegate;
 	IBOutlet NSArrayController *data;
 	IBOutlet NSTableView *table;
-	IBOutlet NSMenuItem *topMenuItem;
-	IBOutlet NSMenuItem *loginoutMenuItem;
-	IBOutlet NSMenu *statusMenu;
-	NSString *expiredkey;
+	IBOutlet NSProgressIndicator *progress;
+	IBOutlet NSTextField *statusField;
 	FacileCellDelegate *cellDelegate;
-	IBOutlet FacileToolbarDelegate *toolbarDelegate;
-}
+	NSStatusItem *statusItem;
+	NSUserDefaults *prefs;
+	NSManagedObjectContext *context;
+	NSArray *statusSortOrder;
+	IBOutlet NSMenuItem *loginoutMenuItem;
+	MKFacebookRequestResponseFormat responseFormat;
+	IBOutlet NSMenuItem *topMenuItem;
+	IBOutlet NSMenu *statusMenu;
 
--(void)setTimeDelay;
--(void)timer:(NSTimer *)timer;
+}
+-(void)getStatus;
 -(IBAction)toggleWindow:(id)sender;
--(void)gotSomeData:(NSXMLDocument *)xmlDocument;
--(void)gotPermission:(NSXMLDocument *)xmlDocument;
--(void)setStatus:(NSXMLDocument *)xmlDocument;
+-(void)facebookRequest:(MKFacebookRequest *)request responseReceived:(id)response;
 -(IBAction)sendStatus:(id)sender;
 -(IBAction)clearStatus:(id)sender;
 -(IBAction)refresh:(id)sender;
 -(IBAction)loginout:(id)sender;
 -(IBAction)gotoprofile:(id)sender;
 -(IBAction)quitFacile:(id)sender;
--(IBAction)donate:(id)sender;
--(void)expire;
--(void)login;
--(void)setAgent;
+-(void)userLoginFailed:(id)message;
+-(void)userLoginSuccessful;
 -(void)growlAlert:(NSArray *)updates;
+-(IBAction)loginout:(id)sender;
 
-
-@property (retain) NSStatusItem *statusItem;
-@property (retain) NSMenu *statusMenu;
-@property (retain) NSTimer *mainTimer;
-@property (retain) NSUserDefaults *prefs;
-@property (retain) NSManagedObjectContext *context;
-@property (retain) MKFacebook *fb;
 @property (retain) NSArray *statusSortOrder;
-@property (retain) NSToolbar *toolbar;
-@property (retain) SUUpdater *updater;
 @property (retain) NSPanel *mainWindow;
-@property (retain) NSTextField *statusField;
-@property (retain) NSProgressIndicator *progress;
+@property (retain) SUUpdater *updater;
+@property (retain) NSToolbar *toolbar;
+@property (retain) FacileToolbarDelegate *toolbarDelegate;
 @property (retain) NSArrayController *data;
 @property (retain) NSTableView *table;
-@property (retain) NSMenuItem *topMenuItem;
-@property (retain) NSMenuItem *loginoutMenuItem;
-@property (retain) NSString *expiredkey;
+@property (retain) NSTextField *statusField;
 @property (retain) FacileCellDelegate *cellDelegate;
-@property (retain) FacileToolbarDelegate *toolbarDelegate;
+@property (retain) NSStatusItem *statusItem;
+@property (retain) NSUserDefaults *prefs;
+@property (retain) NSManagedObjectContext *context;
 @end

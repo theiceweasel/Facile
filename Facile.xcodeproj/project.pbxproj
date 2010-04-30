@@ -3,34 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D1732E711869991000FCC9B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1732E511869991000FCC9B /* MainMenu.xib */; };
-		3D1C22D31186E829003A51AC /* Changelog in Resources */ = {isa = PBXBuildFile; fileRef = 3D1C22D21186E829003A51AC /* Changelog */; };
-		3DA3909F118974BD00545661 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA3909E118974BD00545661 /* BWToolkitFramework.framework */; };
-		3DA390D6118974C600545661 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DA3909E118974BD00545661 /* BWToolkitFramework.framework */; };
-		3DB45D4A1186C086003A8ACF /* MKAbeFook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB45D491186C086003A8ACF /* MKAbeFook.framework */; };
-		3DB45D501186C090003A8ACF /* MKAbeFook.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DB45D491186C086003A8ACF /* MKAbeFook.framework */; };
-		454AB0AD0CF143860089D18B /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 454AB0AC0CF143860089D18B /* mask.png */; };
-		454AB0D70CF14BA10089D18B /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 454AB0D40CF14BA10089D18B /* alert.png */; };
-		454AB0D80CF14BA10089D18B /* Facile.icns in Resources */ = {isa = PBXBuildFile; fileRef = 454AB0D50CF14BA10089D18B /* Facile.icns */; };
-		454AB0D90CF14BA10089D18B /* menubar.png in Resources */ = {isa = PBXBuildFile; fileRef = 454AB0D60CF14BA10089D18B /* menubar.png */; };
-		45A322CB0CEF8B4F00B5BF30 /* FacileCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45A322C90CEF8B4F00B5BF30 /* FacileCell.h */; };
-		45A322CC0CEF8B4F00B5BF30 /* FacileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A322CA0CEF8B4F00B5BF30 /* FacileCell.m */; };
-		45C01DF60CFE0AA600FE30D8 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C01DF50CFE0AA600FE30D8 /* default.png */; };
-		45CBFE390D0B9EB5005F5608 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CBFE380D0B9EB5005F5608 /* Sparkle.framework */; };
-		45CBFE470D0B9EF0005F5608 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45CBFE380D0B9EB5005F5608 /* Sparkle.framework */; };
-		45CD16500CF0E6250014AF69 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CD164F0CF0E6250014AF69 /* Growl.framework */; };
-		45CD16530CF0E6280014AF69 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45CD164F0CF0E6250014AF69 /* Growl.framework */; };
-		45CD16720CF0E98F0014AF69 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = 45CD16710CF0E98F0014AF69 /* Growl Registration Ticket.growlRegDict */; };
-		45DD14E60CEE6042005CEB78 /* FacileController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45DD14E40CEE6042005CEB78 /* FacileController.h */; };
-		45DD14E70CEE6042005CEB78 /* FacileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DD14E50CEE6042005CEB78 /* FacileController.m */; };
-		45FEB56C0D0E46720047B977 /* FacileCellDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45FEB56A0D0E46720047B977 /* FacileCellDelegate.h */; };
-		45FEB56D0D0E46730047B977 /* FacileCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FEB56B0D0E46720047B977 /* FacileCellDelegate.m */; };
-		45FEB6060D0E4A880047B977 /* FacileToolbarDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45FEB6040D0E4A880047B977 /* FacileToolbarDelegate.h */; };
-		45FEB6070D0E4A880047B977 /* FacileToolbarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FEB6050D0E4A880047B977 /* FacileToolbarDelegate.m */; };
+		3D68668B1187C16B00D53D5E /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D68668A1187C16B00D53D5E /* Sparkle.framework */; };
+		3D6866991187C18E00D53D5E /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6866981187C18E00D53D5E /* Growl.framework */; };
+		3D6866B71187C1AA00D53D5E /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D6866981187C18E00D53D5E /* Growl.framework */; };
+		3D6866B91187C1AA00D53D5E /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D68668A1187C16B00D53D5E /* Sparkle.framework */; };
+		3D6866F51187C1D400D53D5E /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6866F41187C1D400D53D5E /* BWToolkitFramework.framework */; };
+		3D6866F81187C1DA00D53D5E /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3D6866F41187C1D400D53D5E /* BWToolkitFramework.framework */; };
+		3D68672F1187C20600D53D5E /* FacileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D68672C1187C20600D53D5E /* FacileCell.m */; };
+		3D6867301187C20600D53D5E /* FacileCellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D68672E1187C20600D53D5E /* FacileCellDelegate.m */; };
+		3D6867331187C21700D53D5E /* FacileToolbarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6867321187C21700D53D5E /* FacileToolbarDelegate.m */; };
+		3D6867381187C23F00D53D5E /* FacileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6867371187C23F00D53D5E /* FacileController.m */; };
+		3D68676A1187C7C800D53D5E /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6867651187C7C800D53D5E /* default.png */; };
+		3D68676B1187C7C800D53D5E /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6867661187C7C800D53D5E /* alert.png */; };
+		3D68676C1187C7C800D53D5E /* Facile.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3D6867671187C7C800D53D5E /* Facile.icns */; };
+		3D68676D1187C7C800D53D5E /* menubar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6867681187C7C800D53D5E /* menubar.png */; };
+		3D68676E1187C7C800D53D5E /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6867691187C7C800D53D5E /* mask.png */; };
+		3DEB6AF3118A24ED00B6CD67 /* MKAbeFook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEB6AF2118A24ED00B6CD67 /* MKAbeFook.framework */; };
+		3DEB6B34118A24FC00B6CD67 /* MKAbeFook.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DEB6AF2118A24ED00B6CD67 /* MKAbeFook.framework */; };
+		3DEB6C70118A450F00B6CD67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DEB6C6F118A450F00B6CD67 /* MainMenu.xib */; };
 		770B37ED0679A11B001EADE2 /* Facile_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* Facile_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* Facile_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* Facile_AppDelegate.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -39,20 +33,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		45DD14E00CEE5FFE005CEB78 /* CopyFiles */ = {
+		3D6866C31187C1B100D53D5E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3DA390D6118974C600545661 /* BWToolkitFramework.framework in CopyFiles */,
-				3DB45D501186C090003A8ACF /* MKAbeFook.framework in CopyFiles */,
-				45CBFE470D0B9EF0005F5608 /* Sparkle.framework in CopyFiles */,
-				45CD16530CF0E6280014AF69 /* Growl.framework in CopyFiles */,
-				45DD14E60CEE6042005CEB78 /* FacileController.h in CopyFiles */,
-				45A322CB0CEF8B4F00B5BF30 /* FacileCell.h in CopyFiles */,
-				45FEB56C0D0E46720047B977 /* FacileCellDelegate.h in CopyFiles */,
-				45FEB6060D0E4A880047B977 /* FacileToolbarDelegate.h in CopyFiles */,
+				3DEB6B34118A24FC00B6CD67 /* MKAbeFook.framework in CopyFiles */,
+				3D6866F81187C1DA00D53D5E /* BWToolkitFramework.framework in CopyFiles */,
+				3D6866B71187C1AA00D53D5E /* Growl.framework in CopyFiles */,
+				3D6866B91187C1AA00D53D5E /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,31 +55,29 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Facile_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facile_Prefix.pch; sourceTree = "<group>"; };
-		3D1732E611869991000FCC9B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		3D1C22D21186E829003A51AC /* Changelog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog; sourceTree = "<group>"; };
-		3DA3909E118974BD00545661 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BWToolkitFramework.framework; sourceTree = "<group>"; };
-		3DB45D491186C086003A8ACF /* MKAbeFook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MKAbeFook.framework; sourceTree = "<group>"; };
-		454AB0AC0CF143860089D18B /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
-		454AB0D40CF14BA10089D18B /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
-		454AB0D50CF14BA10089D18B /* Facile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Facile.icns; sourceTree = "<group>"; };
-		454AB0D60CF14BA10089D18B /* menubar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubar.png; sourceTree = "<group>"; };
-		45A322C90CEF8B4F00B5BF30 /* FacileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileCell.h; sourceTree = "<group>"; };
-		45A322CA0CEF8B4F00B5BF30 /* FacileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileCell.m; sourceTree = "<group>"; };
-		45C01DF50CFE0AA600FE30D8 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
-		45CBFE380D0B9EB5005F5608 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		45CD164F0CF0E6250014AF69 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
-		45CD16710CF0E98F0014AF69 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
-		45DD14E40CEE6042005CEB78 /* FacileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileController.h; sourceTree = "<group>"; };
-		45DD14E50CEE6042005CEB78 /* FacileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileController.m; sourceTree = "<group>"; };
-		45FEB56A0D0E46720047B977 /* FacileCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileCellDelegate.h; sourceTree = "<group>"; };
-		45FEB56B0D0E46720047B977 /* FacileCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileCellDelegate.m; sourceTree = "<group>"; };
-		45FEB6040D0E4A880047B977 /* FacileToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileToolbarDelegate.h; sourceTree = "<group>"; };
-		45FEB6050D0E4A880047B977 /* FacileToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileToolbarDelegate.m; sourceTree = "<group>"; };
+		3D68668A1187C16B00D53D5E /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = /Users/William/Library/Frameworks/Sparkle.framework; sourceTree = "<absolute>"; };
+		3D6866981187C18E00D53D5E /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = /Users/William/Library/Frameworks/Growl.framework; sourceTree = "<absolute>"; };
+		3D6866F41187C1D400D53D5E /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = /Users/William/Library/Frameworks/BWToolkitFramework.framework; sourceTree = "<absolute>"; };
+		3D68672B1187C20600D53D5E /* FacileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileCell.h; sourceTree = "<group>"; };
+		3D68672C1187C20600D53D5E /* FacileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileCell.m; sourceTree = "<group>"; };
+		3D68672D1187C20600D53D5E /* FacileCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileCellDelegate.h; sourceTree = "<group>"; };
+		3D68672E1187C20600D53D5E /* FacileCellDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileCellDelegate.m; sourceTree = "<group>"; };
+		3D6867311187C21700D53D5E /* FacileToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileToolbarDelegate.h; sourceTree = "<group>"; };
+		3D6867321187C21700D53D5E /* FacileToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileToolbarDelegate.m; sourceTree = "<group>"; };
+		3D6867361187C23F00D53D5E /* FacileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacileController.h; sourceTree = "<group>"; };
+		3D6867371187C23F00D53D5E /* FacileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacileController.m; sourceTree = "<group>"; };
+		3D6867651187C7C800D53D5E /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		3D6867661187C7C800D53D5E /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
+		3D6867671187C7C800D53D5E /* Facile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Facile.icns; sourceTree = "<group>"; };
+		3D6867681187C7C800D53D5E /* menubar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubar.png; sourceTree = "<group>"; };
+		3D6867691187C7C800D53D5E /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		3DEB6AF2118A24ED00B6CD67 /* MKAbeFook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MKAbeFook.framework; sourceTree = "<group>"; };
+		3DEB6C6F118A450F00B6CD67 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		770B37EC0679A11B001EADE2 /* Facile_DataModel.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Facile_DataModel.xcdatamodel; sourceTree = "<group>"; };
 		77C82804067257F0000B614F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		77C8280B06725ACE000B614F /* Facile_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facile_AppDelegate.h; sourceTree = "<group>"; };
 		77C8280C06725ACE000B614F /* Facile_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facile_AppDelegate.m; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Facile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,10 +87,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				45CD16500CF0E6250014AF69 /* Growl.framework in Frameworks */,
-				45CBFE390D0B9EB5005F5608 /* Sparkle.framework in Frameworks */,
-				3DB45D4A1186C086003A8ACF /* MKAbeFook.framework in Frameworks */,
-				3DA3909F118974BD00545661 /* BWToolkitFramework.framework in Frameworks */,
+				3D68668B1187C16B00D53D5E /* Sparkle.framework in Frameworks */,
+				3D6866991187C18E00D53D5E /* Growl.framework in Frameworks */,
+				3D6866F51187C1D400D53D5E /* BWToolkitFramework.framework in Frameworks */,
+				3DEB6AF3118A24ED00B6CD67 /* MKAbeFook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +100,16 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3D6867311187C21700D53D5E /* FacileToolbarDelegate.h */,
+				3D6867321187C21700D53D5E /* FacileToolbarDelegate.m */,
+				3D68672B1187C20600D53D5E /* FacileCell.h */,
+				3D68672C1187C20600D53D5E /* FacileCell.m */,
+				3D68672D1187C20600D53D5E /* FacileCellDelegate.h */,
+				3D68672E1187C20600D53D5E /* FacileCellDelegate.m */,
 				77C8280B06725ACE000B614F /* Facile_AppDelegate.h */,
 				77C8280C06725ACE000B614F /* Facile_AppDelegate.m */,
-				45DD14E40CEE6042005CEB78 /* FacileController.h */,
-				45DD14E50CEE6042005CEB78 /* FacileController.m */,
-				45A322C90CEF8B4F00B5BF30 /* FacileCell.h */,
-				45A322CA0CEF8B4F00B5BF30 /* FacileCell.m */,
-				45FEB56A0D0E46720047B977 /* FacileCellDelegate.h */,
-				45FEB56B0D0E46720047B977 /* FacileCellDelegate.m */,
-				45FEB6040D0E4A880047B977 /* FacileToolbarDelegate.h */,
-				45FEB6050D0E4A880047B977 /* FacileToolbarDelegate.m */,
+				3D6867361187C23F00D53D5E /* FacileController.h */,
+				3D6867371187C23F00D53D5E /* FacileController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -129,9 +117,8 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DA3909E118974BD00545661 /* BWToolkitFramework.framework */,
-				45CBFE380D0B9EB5005F5608 /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				3D6866F41187C1D400D53D5E /* BWToolkitFramework.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -139,11 +126,12 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45CD164F0CF0E6250014AF69 /* Growl.framework */,
+				3DEB6AF2118A24ED00B6CD67 /* MKAbeFook.framework */,
+				3D6866981187C18E00D53D5E /* Growl.framework */,
 				77C82804067257F0000B614F /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
-				3DB45D491186C086003A8ACF /* MKAbeFook.framework */,
+				3D68668A1187C16B00D53D5E /* Sparkle.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -156,7 +144,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* Facile */ = {
+		29B97314FDCFA39411CA2CEA /* Facilious */ = {
 			isa = PBXGroup;
 			children = (
 				7756732906782D8800D1FEB8 /* Models */,
@@ -166,7 +154,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
-			name = Facile;
+			name = Facilious;
 			sourceTree = "<group>";
 		};
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
@@ -181,16 +169,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3D1732E511869991000FCC9B /* MainMenu.xib */,
-				45C01DF50CFE0AA600FE30D8 /* default.png */,
-				454AB0D40CF14BA10089D18B /* alert.png */,
-				454AB0D50CF14BA10089D18B /* Facile.icns */,
-				454AB0D60CF14BA10089D18B /* menubar.png */,
-				454AB0AC0CF143860089D18B /* mask.png */,
-				45CD16710CF0E98F0014AF69 /* Growl Registration Ticket.growlRegDict */,
+				3DEB6C6F118A450F00B6CD67 /* MainMenu.xib */,
+				3D6867651187C7C800D53D5E /* default.png */,
+				3D6867661187C7C800D53D5E /* alert.png */,
+				3D6867671187C7C800D53D5E /* Facile.icns */,
+				3D6867681187C7C800D53D5E /* menubar.png */,
+				3D6867691187C7C800D53D5E /* mask.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				3D1C22D21186E829003A51AC /* Changelog */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -222,7 +208,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				45DD14E00CEE5FFE005CEB78 /* CopyFiles */,
+				3D6866C31187C1B100D53D5E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -230,7 +216,7 @@
 			);
 			name = Facile;
 			productInstallPath = "$(HOME)/Applications";
-			productName = Facile;
+			productName = Facilious;
 			productReference = 8D1107320486CEB800E47090 /* Facile.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -240,9 +226,9 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "Facile" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
-			mainGroup = 29B97314FDCFA39411CA2CEA /* Facile */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Facilious */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -257,14 +243,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				45CD16720CF0E98F0014AF69 /* Growl Registration Ticket.growlRegDict in Resources */,
-				454AB0AD0CF143860089D18B /* mask.png in Resources */,
-				454AB0D70CF14BA10089D18B /* alert.png in Resources */,
-				454AB0D80CF14BA10089D18B /* Facile.icns in Resources */,
-				454AB0D90CF14BA10089D18B /* menubar.png in Resources */,
-				45C01DF60CFE0AA600FE30D8 /* default.png in Resources */,
-				3D1732E711869991000FCC9B /* MainMenu.xib in Resources */,
-				3D1C22D31186E829003A51AC /* Changelog in Resources */,
+				3D68676A1187C7C800D53D5E /* default.png in Resources */,
+				3D68676B1187C7C800D53D5E /* alert.png in Resources */,
+				3D68676C1187C7C800D53D5E /* Facile.icns in Resources */,
+				3D68676D1187C7C800D53D5E /* menubar.png in Resources */,
+				3D68676E1187C7C800D53D5E /* mask.png in Resources */,
+				3DEB6C70118A450F00B6CD67 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +262,10 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				77C8280E06725ACE000B614F /* Facile_AppDelegate.m in Sources */,
 				770B37ED0679A11B001EADE2 /* Facile_DataModel.xcdatamodel in Sources */,
-				45DD14E70CEE6042005CEB78 /* FacileController.m in Sources */,
-				45A322CC0CEF8B4F00B5BF30 /* FacileCell.m in Sources */,
-				45FEB56D0D0E46730047B977 /* FacileCellDelegate.m in Sources */,
-				45FEB6070D0E4A880047B977 /* FacileToolbarDelegate.m in Sources */,
+				3D68672F1187C20600D53D5E /* FacileCell.m in Sources */,
+				3D6867301187C20600D53D5E /* FacileCellDelegate.m in Sources */,
+				3D6867331187C21700D53D5E /* FacileToolbarDelegate.m in Sources */,
+				3D6867381187C23F00D53D5E /* FacileController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,34 +280,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		3D1732E511869991000FCC9B /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D1732E611869991000FCC9B /* English */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		26FC0A850875C7B200E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+					"\"$(SRCROOT)/../../Desktop\"",
 					"\"$(SRCROOT)\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../BWToolkit\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -334,38 +304,27 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Facile;
-				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
 			};
 			name = Debug;
 		};
 		26FC0A860875C7B200E6366F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+					"\"$(SRCROOT)/../../Desktop\"",
 					"\"$(SRCROOT)\"",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../BWToolkit\"";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Facile_Prefix.pch;
-				GCC_VERSION = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Facile;
-				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -373,6 +332,8 @@
 		26FC0A890875C7B200E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -385,10 +346,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};

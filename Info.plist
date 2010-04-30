@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Facile.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.elidourado.facile</string>
+	<string>com.yourcompany.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -19,17 +19,13 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.0.6</string>
+	<string>1</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.6</string>
+	<string>1.0</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
-	<key>LSUIElement</key>
-	<false/>
-	<key>SUFeedURL</key>
-	<string>http://osx.iusethis.com/appcast/facile</string>
-	<key>SUScheduledCheckInterval</key>
-	<integer>3600</integer>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

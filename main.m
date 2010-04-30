@@ -2,8 +2,8 @@
 //  main.m
 //  Facile
 //
-//  Created by Eli Dourado on 11/16/07.
-//  Copyright __MyCompanyName__ 2007. All rights reserved.
+//  Created by William Whitlock on 4/27/10.
+//  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

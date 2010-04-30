@@ -1,8 +1,10 @@
 //
-//  LoginWindow.h
+//  MKFacebookSession.h
 //  MKAbeFook
 //
-//  Created by Mike on 10/11/06.
+//  Created by Mike Kinney on 9/19/09.
+//  Copyright 2009 Mike Kinney. All rights reserved.
+//
 /*
  Copyright (c) 2009, Mike Kinney
  All rights reserved.
@@ -17,42 +19,54 @@
  */
 
 #import <Cocoa/Cocoa.h>
-//0.6 case sensitivity issue fixed.  Thanks Dale.
-#import <WebKit/WebKit.h>
-@interface MKLoginWindow : NSWindowController  {
-	NSString *path;
-	IBOutlet WebView *loginWebView;
-	IBOutlet NSButton *closeWindowButton; 
+#import "SynthesizeSingleton.h"
+
+extern NSString *MKFacebookSessionKey;
+
+//Handles saving session information to disk and loading existing sessions.
+@interface MKFacebookSession : NSObject {
 	
-	BOOL _loginWindowIsSheet;
-	
-	IBOutlet NSProgressIndicator *loadingWindowProgressIndicator; //used to display activity while setting up everything needed before facebook login page can even be requested.  auth token etc... added in 0.7.7
-	
-	IBOutlet NSProgressIndicator *loadingWebViewProgressIndicator;
-	
-	id _delegate; //the place where userLoginSuccessfull will be called
-	
-	BOOL runModally;
+	NSDictionary *session;
+	NSString *apiKey;
+	NSString *secretKey;
+	BOOL _validSession;
+
 }
 
-@property BOOL _loginWindowIsSheet;
-@property (nonatomic, retain) id _delegate;
-@property BOOL runModally;
+@property (nonatomic, retain) NSDictionary *session;
+@property (nonatomic, retain) NSString *apiKey;
+@property (nonatomic, retain) NSString *secretKey;
 
--(id)init;
++ (MKFacebookSession *)sharedMKFacebookSession;
 
-
-
--(void)displayLoadingWindowIndicator;
--(void)hideLoadingWindowIndicator;
-
--(void)loadURL:(NSURL *)loginURL;
--(IBAction)closeWindow:(id)sender;
--(void)windowWillClose:(NSNotification *)aNotification;
--(void)setWindowSize:(NSSize)windowSize;
+// Accepts a new session dictionary.  Saves the session to the application defaults.
+- (void)saveSession:(NSDictionary *)aSession;
 
 
-#pragma mark WebView Delegate Methods
-- (void)webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame;
-- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
+/*
+Logs in a user from a saved session.
+ 
+Attempts to load a stored infinte session for the application.  This method checks NSUserDefaults for a stored sessionKey and sessionSecret.  It uses a synchronous request to try to authenticate the stored session.  Used internally when login or loginWithPermissions:forSheet: are called.
+ 
+Returns true if stored session information is valid and a user id is successfully returned from Facebook otherwise it returns false.
+*/
+- (BOOL)loadSession;
+
+
+
+// Destroys any saved session.
+- (void)destroySession;
+
+
+// Checks to see if session looks valid.
+- (BOOL)validSession;
+
+
+//accessors to session information
+- (NSString *)sessionKey;
+- (NSString *)sessionSecret;
+- (NSString *)expirationDate;
+- (NSString *)uid;
+- (NSString *)sig;
+
 @end

@@ -2,48 +2,40 @@
 //  FacileController.m
 //  Facile
 //
-//  Created by Eli Dourado on 11/16/07.
-// Edited By William Whitlock                                                                                                    
+//  Created by William Whitlock on 4/27/10.
+//  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
 #import "FacileController.h"
 
+
 @implementation FacileController
 
-- (id)init
-{
+
+-(id)init{
 	[super init];
-	[[NSNotificationCenter defaultCenter] addObserver:self 
-											 selector:@selector(setSpellChecking:) 
-												 name:NSControlTextDidBeginEditingNotification object:statusField];
-	
-	expiredkey=[NSString stringWithFormat:@"expired%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
-	
 	NSMutableDictionary *defaultPrefs = [NSMutableDictionary dictionary];
 	[defaultPrefs setObject:@"1" forKey:@"timeDelay"];
-	[defaultPrefs setObject:@"0" forKey:expiredkey];
 	[defaultPrefs setObject:@"0.9" forKey:@"alpha"];
 	[defaultPrefs setObject:@"7" forKey:@"eraseAfter"];
 	[defaultPrefs setObject:@"NO" forKey:@"statusMenuBOOL"];
-	NSLog(@"%@",defaultPrefs);
+	
 	prefs = [[NSUserDefaults standardUserDefaults] retain];
 	[prefs registerDefaults:defaultPrefs];
-	if ([[NSDate date] compare:[NSDate dateWithNaturalLanguageString:@"January 15, 2009"]]==NSOrderedDescending) {
-//		[prefs setValue:@"1" forKey:expiredkey];
-	}
 	
 	NSSortDescriptor *timeDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"time" ascending:NO] autorelease];
 	statusSortOrder=[NSArray arrayWithObjects:timeDescriptor, nil];
 	[GrowlApplicationBridge setGrowlDelegate:self];
 	
 	return self;
+
 }
 
-- (void)awakeFromNib
-{
+-(void)awakeFromNib{
+	
 	context = [[NSApp delegate] managedObjectContext];
 	[mainWindow bind:@"alphaValue" toObject:prefs withKeyPath:@"alpha" options:nil];
-	[toolbar setDelegate:toolbarDelegate];
+	[toolbar setDelegate:toolbarDelegate];	
 	[mainWindow setToolbar:toolbar];
 	[NSApp activateIgnoringOtherApps:YES];
 	
@@ -55,43 +47,34 @@
 	FacileCell* cell = [[[FacileCell alloc] init] autorelease];
 	[cell setDataDelegate: cellDelegate];
 	[column setDataCell: cell];
+	
 	statusItem = [[[NSStatusBar systemStatusBar]
-            statusItemWithLength:NSVariableStatusItemLength] retain];
+				   statusItemWithLength:NSVariableStatusItemLength] retain];
 	[statusItem setHighlightMode:YES];
 	[statusItem setImage:[NSImage imageNamed:@"menubar"]];
 	[statusItem setTarget:self];
 	[statusItem setAction:@selector(toggleWindow:)];
 	[statusItem setEnabled:YES];
-	if ([prefs valueForKey:@"statusMenuBOOL"]==@"YES") {
-		[statusItem setMenu:statusMenu];
-	}
 	
-	[self login];
-}
-
--(void)setAgent
-{
-	NSString *agentValue = [NSString stringWithFormat:@"%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"LSUIElement"]];
 	
-	NSLog(@"%@",agentValue);
+	MKFacebook *fbConnection = [[MKFacebook facebookWithAPIKey:@"1557f283d3de4a97a07df85adc427e6a" delegate:self] retain];
+	[fbConnection login];
+	
+	[NSTimer scheduledTimerWithTimeInterval:1
+									 target:self
+								   selector:@selector(getStatus)
+								   userInfo:nil
+									repeats:NO];
+	
+	[NSTimer scheduledTimerWithTimeInterval:(60 * [[prefs valueForKey:@"timeDelay"] intValue])
+									 target:self
+								   selector:@selector(getStatus)
+								   userInfo:nil
+									repeats:YES];
+	
+	
+	
 
-}
-
-- (void)expire
-{
-	if([[NSAlert alertWithMessageText:@"Facile has expired" defaultButton:@"Check For New Version" alternateButton:@"Quit" otherButton:nil informativeTextWithFormat:@"This version of Facile has expired.  Please download the latest version from the homepage."] runModal] == NSAlertDefaultReturn)
-	{
-		[updater checkForUpdates:nil];
-	} else {
-		[self quitFacile:nil];
-	}
-}
-
-
-
--(IBAction)donate:(id)sender
-{
-	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=elidourado%40gmail%2ecom&item_name=Facile%20Development&no_shipping=1&no_note=1&tax=0&currency_code=USD&lc=US&bn=PP%2dDonationsBF&charset=UTF%2d8"]];
 }
 
 -(IBAction)toggleWindow:(id)sender
@@ -111,42 +94,40 @@
 	[NSApp hide:nil];
 }
 
--(void)setTimeDelay //creates a timer with a user-specified delay, fires the timer
+-(void)getStatus
 {
-    mainTimer = [[NSTimer scheduledTimerWithTimeInterval:(60 * [[prefs valueForKey:@"timeDelay"] intValue])
-                                                  target:self
-                                                selector:@selector(timer:)
-                                                userInfo:nil
-                                                 repeats:YES] retain];	
-	[mainTimer fire];
-}
-
--(void)timer:(NSTimer *)timer 
-{
+	MKFacebook *fbConnection = [[MKFacebook facebookWithAPIKey:@"1557f283d3de4a97a07df85adc427e6a" delegate:self] retain];
+	MKFacebookRequest *request = [MKFacebookRequest requestWithDelegate:self];
 	NSMutableDictionary *parameters = [[[NSMutableDictionary alloc] init] autorelease];
-	[parameters setValue:[NSString stringWithFormat:@"SELECT uid, name, status, pic_square FROM user WHERE status.message > 0 AND uid IN (SELECT uid2 FROM friend WHERE uid1 = %@) OR uid IN (%@)", [fb uid],[fb uid]] forKey:@"query"];
-	[MKAsyncRequest fetchFacebookData:@"facebook.fql.query"
-						   parameters:parameters
-				   facebookConnection:fb
-							 delegate:self
-							 selector:@selector(gotSomeData:)];
+	[parameters setValue:[fbConnection uid] forKey:@"uid"];
+	[parameters setValue:[NSString stringWithFormat:@"SELECT uid, name, status, pic_square FROM user WHERE status.message > 0 AND uid IN (SELECT uid2 FROM friend WHERE uid1 = %@) OR uid IN (%@)", [fbConnection uid],[fbConnection uid]] forKey:@"query"];
+	[request sendRequest:@"fql.query" withParameters:parameters];
+	
 }
 
--(void)gotSomeData:(NSXMLDocument *)xmlDocument
+-(void)facebookRequest:(MKFacebookRequest *)request responseReceived:(id)response
 {
-	//NSLog(@"Look at all the cool stuff we got: %@",[xmlDocument XMLStringWithOptions:NSXMLNodePrettyPrint]);
-	if ([fb validXMLResponse:xmlDocument]){
-		NSArray *friendData = [fb arrayFromXMLResponse:xmlDocument];
-		NSMutableArray *updatedStatuses = [[NSMutableArray alloc] initWithObjects:nil];
+	
+	//NSLog(@"Look at all the cool stuff we got: %@",[returnXML XMLStringWithOptions:NSXMLNodePrettyPrint]);
+	MKFacebook *fbConnection = [[MKFacebook facebookWithAPIKey:@"1557f283d3de4a97a07df85adc427e6a" delegate:self] retain];
+	
+	NSXMLDocument *xmlDocument = response;
+	NSXMLElement *xmlElement = [xmlDocument rootElement];
+	
+	if ([xmlDocument validFacebookResponse]){
+		NSLog(@"YES!");
 		
+		NSArray *friendData = [xmlElement arrayFromXMLElement];
+		NSMutableArray *updatedStatuses = [[NSMutableArray alloc] initWithObjects:nil];
+		NSLog(@"%@",friendData);
 		for(NSDictionary *friend in friendData){
-			if([[friend valueForKey:@"uid"] isEqualToString:[fb uid]]){
+			if([[friend valueForKey:@"uid"] isEqualToString:[fbConnection uid]]){
 				if([[friend objectForKey:@"status"] valueForKey:@"message"] != nil){
 					[[statusField cell] setPlaceholderString:[NSString stringWithFormat:@"%@ %@",[friend valueForKey:@"name"],[[friend objectForKey:@"status"] valueForKey:@"message"]]]; 
 				} else {
 					[[statusField cell] setPlaceholderString:[NSString stringWithFormat:@"%@... ",[friend valueForKey:@"name"]]]; 
 				}
-			}			
+			}
 			if([[friend objectForKey:@"status"] valueForKey:@"message"] != nil){
 				
 				NSString *uid=[friend valueForKey:@"uid"];
@@ -173,11 +154,11 @@
 				}
 			}
 		}
-		
+		//NSLog(@"hi");
 		[self growlAlert:updatedStatuses];
 		[updatedStatuses autorelease];
-		
-	}
+	}	
+	
 	else {
 		NSLog(@"error");
 	}
@@ -200,36 +181,37 @@
 			}
 			
 			[GrowlApplicationBridge
-	notifyWithTitle:[friend valueForKey:@"name"]
-		description:[[friend objectForKey:@"status"] valueForKey:@"message"]
-   notificationName:@"Friend Status"
-		   iconData:iconData
-		   priority:0
-		   isSticky:NO
-	   clickContext:nil];
+			 notifyWithTitle:[friend valueForKey:@"name"]
+			 description:[[friend objectForKey:@"status"] valueForKey:@"message"]
+			 notificationName:@"Friend Status"
+			 iconData:iconData
+			 priority:0
+			 isSticky:NO
+			 clickContext:nil];
 		}
 	}
 	else {
 		
 		[GrowlApplicationBridge
-	notifyWithTitle:@"Status Updates"
-		description:[NSString stringWithFormat:@"%d of your friends have updated their status.",[updates count]]
-   notificationName:@"Friend Status"
-		   iconData:nil
-		   priority:0
-		   isSticky:NO
-	   clickContext:nil];
+		 notifyWithTitle:@"Status Updates"
+		 description:[NSString stringWithFormat:@"%d of your friends have updated their status.",[updates count]]
+		 notificationName:@"Friend Status"
+		 iconData:nil
+		 priority:0
+		 isSticky:NO
+		 clickContext:nil];
 	}
 }
 
 -(void)gotPermission:(NSXMLDocument *)xmlDocument
 {
+	MKFacebook *fbConnection = [[MKFacebook facebookWithAPIKey:@"1557f283d3de4a97a07df85adc427e6a" delegate:self] retain];
 	//NSLog(@"Look at all the cool stuff we got: %@",[xmlDocument XMLStringWithOptions:NSXMLNodePrettyPrint]);
-	if ([fb validXMLResponse:xmlDocument]){			
+	if ([xmlDocument validFacebookResponse]){			
 		if(![[[[xmlDocument rootElement] childAtIndex:0] description] intValue]){
 			if([[NSAlert alertWithMessageText:@"Give Facile permission?" defaultButton:@"Give Permission" alternateButton:@"No, Thanks" otherButton:nil informativeTextWithFormat:@"Facile needs permission to be able to send your status updates to Facebook."] runModal] == NSAlertDefaultReturn)
 			{
-				[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.facebook.com/authorize.php?api_key=1557f283d3de4a97a07df85adc427e6a&v=1.0&ext_perm=status_update"]];
+				[fbConnection grantExtendedPermission:@"publish_stream"];
 			} else {
 				[statusField setEditable:FALSE];
 			}
@@ -245,12 +227,11 @@
 }
 
 -(void)setStatus:(NSXMLDocument *)xmlDocument
-{
+{	
 	//NSLog(@"Look at all the cool stuff we got: %@",[xmlDocument XMLStringWithOptions:NSXMLNodePrettyPrint]);
-	if ([fb validXMLResponse:xmlDocument]){			
+	if ([xmlDocument validFacebookResponse]){			
 		if([[[[xmlDocument rootElement] childAtIndex:0] description] intValue]){
-			[mainTimer invalidate];
-			[self setTimeDelay];
+			[self getStatus];
 			[statusField setStringValue:@""];
 			[progress stopAnimation:nil];
 		}
@@ -272,35 +253,18 @@
 
 -(IBAction)refresh:(id)sender
 {
-	[mainTimer invalidate];
-	[self setTimeDelay];
+	[self getStatus];
 }
 
 -(IBAction)loginout:(id)sender
 {
-	if([fb userLoggedIn]){
-		[mainTimer invalidate];
-		[fb resetFacebookConnection];
+	MKFacebook *fbConnection = [[MKFacebook facebookWithAPIKey:@"1557f283d3de4a97a07df85adc427e6a" delegate:self] retain];
+	if([fbConnection userLoggedIn]){
+		[fbConnection logout];
 		[loginoutMenuItem setTitle:@"Log In"];		
 		[[statusField cell] setPlaceholderString:@""];
 	} else {
-		[self login];
-	}
-}
-
--(void)login
-{
-	if (![[prefs valueForKey:expiredkey] isEqualTo:@"1"]) {		
-		NSString *bundleIdentifier = [[NSBundle bundleForClass:[self class]] bundleIdentifier];
-		fb = [[MKFacebook facebookWithAPIKey:@"1557f283d3de4a97a07df85adc427e6a" withSecret:@"e187a4cba59b7e86fe1e67eeb77a2d82" delegate:self withDefaultsName:bundleIdentifier] retain];
-		
-		if ([fb loadPersistentSession]) {
-			//NSLog(@"already logged in");
-		} else {
-			[fb showFacebookLoginWindow];
-		}
-	} else {
-		[self expire];
+		[fbConnection login];
 	}
 }
 
@@ -314,43 +278,35 @@
 
 -(IBAction)sendStatus:(id)sender
 {
+	MKFacebookRequest *request = [MKFacebookRequest requestWithDelegate:self selector:@selector(setStatus:)];
 	NSMutableDictionary *parameters = [[[NSMutableDictionary alloc] init] autorelease];
 	[parameters setValue:[statusField stringValue] forKey:@"status"];
 	[parameters setValue:@"true" forKey:@"status_includes_verb"];
-	[MKAsyncRequest fetchFacebookData:@"facebook.users.setStatus"
-						   parameters:parameters
-				   facebookConnection:fb
-							 delegate:self
-							 selector:@selector(setStatus:)];
+	[request sendRequest:@"users.setStatus" withParameters:parameters];
 	[progress startAnimation:nil];
 }
 
 -(IBAction)clearStatus:(id)sender
 {
 	[progress displayIfNeeded];
+	MKFacebookRequest *request = [MKFacebookRequest requestWithDelegate:self selector:@selector(setStatus:)];
 	NSMutableDictionary *parameters = [[[NSMutableDictionary alloc] init] autorelease];
 	[parameters setValue:@"true" forKey:@"clear"];
-	[MKAsyncRequest fetchFacebookData:@"facebook.users.setStatus"
-						   parameters:parameters
-				   facebookConnection:fb
-							 delegate:self
-							 selector:@selector(setStatus:)];
+	[request sendRequest:@"users.setStatus" withParameters:parameters];
 	[progress startAnimation:nil];
 }
 
 -(void)userLoginSuccessful
 {
-	//NSLog(@"Neat");
+	NSLog(@"neat");
 	[loginoutMenuItem setTitle:@"Log Out"];
 	
+	MKFacebookRequest *request = [MKFacebookRequest requestWithDelegate:self selector:@selector(gotPermission:)];
 	NSMutableDictionary *parameters = [[[NSMutableDictionary alloc] init] autorelease];
 	[parameters setValue:@"status_update" forKey:@"ext_perm"];
-	[MKAsyncRequest fetchFacebookData:@"facebook.users.hasAppPermission"
-						   parameters:parameters
-				   facebookConnection:fb
-							 delegate:self
-							 selector:@selector(gotPermission:)];
-	[self setTimeDelay];
+	[request sendRequest:@"facebook.users.hasAppPermission" withParameters:parameters];
+	[self getStatus];
+	
 }
 
 -(void)userLoginFailed:(id)message
@@ -376,23 +332,18 @@
 	[NSApp terminate:nil];
 }
 
-@synthesize statusItem;
-@synthesize statusMenu;
-@synthesize mainTimer;
-@synthesize prefs;
-@synthesize context;
-@synthesize fb;
+
 @synthesize statusSortOrder;
-@synthesize toolbar;
-@synthesize updater;
+
 @synthesize mainWindow;
-@synthesize progress;
+@synthesize updater;
+@synthesize toolbar;
+@synthesize toolbarDelegate;
 @synthesize data;
 @synthesize table;
-@synthesize topMenuItem;
-@synthesize loginoutMenuItem;
-@synthesize expiredkey;
-@synthesize cellDelegate;
-@synthesize toolbarDelegate;
 @synthesize statusField;
+@synthesize cellDelegate;
+@synthesize statusItem;
+@synthesize prefs;
+@synthesize context;
 @end
